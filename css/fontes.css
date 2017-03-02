@@ -1,0 +1,821 @@
+
+/****************************MENU*SUPERIOR************************************/
+.fontLinkMenuSuperior {
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	text-decoration: none;	
+	font-weight: normal;
+}
+.fontLinkMenuSuperior:hover {
+	text-decoration: underline;
+}
+
+.fontLinkMenuSuperiorSelecionado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #e89d25;
+	text-decoration: none;	
+	font-weight: bolder;
+}
+.fontLinkMenuSuperiorInativo {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C1C1C1;
+	text-decoration: none;	
+	font-weight: normal;
+}
+
+
+
+
+/****************************MENU*ADMINISTRATIVO******************************/
+.fontMenuAdministrativo {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	padding-top: 4px;
+	text-align: center;
+}
+
+
+.fontLinkMenuAdministrativo {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-decoration: none;	
+	font-weight: normal;
+}
+.fontLinkMenuAdministrativo:hover {
+	text-decoration: underline;
+}
+.fontLinkMenuAdministrativoSelecionado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-decoration: none;	
+	font-weight: bolder;
+}
+
+
+/************************MENU DADOS LOGIN*************************************/
+.fontLinkMenuDadosLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-decoration: none;	
+}
+.fontLinkMenuDadosLogin:hover {
+	text-decoration: underline;
+}
+
+
+/****************************MENU*INTERNO*************************************/
+.fontConteudoMenuInterno {
+   text-align: left;
+	margin-left: -10px; 	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bold;
+	vertical-align: super;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/****************************COMANDOS*****************************************/
+.fontComandosFiltros {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: super;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+.fontComandosCentralizados {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: super;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+
+
+
+
+/****************************RETORNOS*****************************************/
+.fontConteudoAlerta {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f41b07;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	text-align: center;
+}
+
+.fontConteudoSucesso {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8ccb59;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	text-align: center;
+}
+
+
+
+
+
+
+
+/****************************LINKS*GERAIS*************************************/
+.fontLink {
+	color: #004b80;
+	text-decoration: none;
+}
+.fontLink:hover {
+	text-decoration: underline;
+}
+.fontLinkSelecionado {
+	color: #004b80;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.fontLinkSelecionado:hover {
+	text-decoration: underline;
+}
+.fontLinkReduzido {
+	color: #004b80;
+	text-decoration: none;
+}
+.fontLinkReduzido:hover {
+	text-decoration: underline;
+}
+
+.fontLinkDownloadObjetosAprendizagem {
+	color: #004b80;
+	text-decoration: none;	
+}
+.fontLinkDownloadObjetosAprendizagem:hover {
+	text-decoration: underline;
+	color: #004b80;
+}
+
+.fontLinkNoticias {
+	color: #004b80;
+	text-decoration: none;	
+}
+.fontLinkNoticias:hover {
+	text-decoration: underline;
+}
+/******************************CAPA*******************************************/
+.fontTituloItemTopoCapa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 2px;
+	margin-top: 5px;	
+	text-align: center;
+	font-weight: bold;
+}
+.fontChamadaItemTopoCapa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	text-align: center;
+}
+
+.fontTituloItemMeioCapa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bolder;
+	margin-bottom: 2px;
+	margin-top: 5px;	
+	text-align: center;
+}
+.fontChamadaItemMeioCapa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	text-align: center;
+}
+
+
+/****************************CONTEÚDOS****************************************/
+.fontComandosCentralizados {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 2px;
+	margin-top: 2px;	
+	text-align: center;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+.fontConteudoCentralizado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: center;
+}
+.fontConteudoPesquisa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: center;
+}
+
+.fontConteudoObjetosAprendizagem {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;	
+}
+
+.fontComentariosObjetosAprendizagem  {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	line-height: 18px;
+}
+.fontRespostasComentariosObjetosAprendizagem  {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-top: 0px;
+	padding-left: 40px;
+	padding-right: 10px;
+	text-align: justify;
+	line-height: 18px;
+}
+
+.fontConteudoObjetosAprendizagemRetornoPesquisa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-top: 10px;
+	margin-left: -10px;
+	padding-right: 10px;
+	text-align: justify;	
+	line-height: 19px;
+}
+
+.fontConteudoObjetosAprendizagemComentarioDenuncia {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-top: 10px;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	text-align: justify;	
+	line-height: 19px;
+	background-color: #eeeef0;
+}
+
+.fontConteudoDuploObjetosAprendizagem {
+	float: left;
+	width: 47%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: justify;	
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.fontDownloadObjetosAprendizagem {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 10px;
+	margin-top: 10px;	
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/**************************NOTICIAS*******************************/
+.fontTituloNoticia {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bolder;
+	width: 90%;
+}
+.fontResumoNoticia {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: justify;
+}
+
+
+/**********************COMO*USAR**********************************/
+.fontChamadaComoUsar {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+.fontDescricaoCategoriaComoUsar {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+.fontPerguntaComoUsar{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	font-weight: bolder;
+}
+
+.fontRespostaComoUsar{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+
+
+/****************************LOGIN********************************************/
+.fontConteudoLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.fontConteudoLogado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: right;
+}
+
+.fontNomeUsuarioLogado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 7px;
+}
+.fontNomeUsuarioLogadoEvidencia {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 7px;
+}
+
+.fontCampoLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	border-color: #004b80;
+	border-width: 1px;
+	border-style: groove;
+	width: 320px;
+}
+
+.botao {
+	width: auto;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #eeeef0;
+	border-color: #004b80;
+	border-width: 2px;
+	border-style: double;
+	border-radius: 10px 5px 10px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.botaoGrande {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #eeeef0;
+	border-color: #004b80;
+	border-width: 1px;
+	border-style: groove;
+	border-radius: 20px 20px 20px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+}
+
+.fontLinkLogin {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-decoration: none;	
+}
+
+.fontLinkLogin:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+/****************************TÍTULOS******************************************/
+h1 {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-style: bold;
+	text-decoration: none;
+}
+
+h2 {
+	padding-top: 4px;
+	padding-bottom: 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-style: bold;
+	text-align: left;
+}
+
+h3 {
+	padding-top: 3px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	font-style: bold;
+}
+
+h4 {
+	padding-top: 1px;
+	padding-bottom: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+}
+
+
+
+
+
+
+
+
+
+/****************************CAMPOS*******************************************/
+.fontConteudoCampoTextHintObrigatorio {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: #eeeef0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	height: 30px;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextHintObrigatorio:hover  {
+	border-color: #e89d25;
+}
+
+
+.fontConteudoCampoTextHint {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: White;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	height: 30px;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextHint:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoTextHintFiltro {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: #FAF0E6;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	height: 30px;
+	margin-bottom: 5px;
+	margin-top: 15px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextHintFiltro:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoTextHintFiltroCapa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	height: 50px;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextHintFiltroCapa:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoTextoHintObrigatorio {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: #eeeef0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextoHintObrigatorio:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoTextoHint {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: White;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoTextoHint:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoSeletorHintObrigatorio {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: #eeeef0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	padding-left: 5px;	
+	height: 30px;
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoSeletorHintObrigatorio:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoSeletorHint {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: White;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+	height: 30px;
+	padding-left: 5px;	
+	moz-placeholder: #e89d25;
+}
+.fontConteudoCampoSeletorHint:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCampoSeletorHintFiltro {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: White;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cecece;
+	margin-bottom: 2px;
+	margin-top: 1px;	
+	height: 30px;
+	padding-left: 5px;	
+	moz-placeholder: #f9c26c;
+}
+.fontConteudoCampoSeletorHintFiltro:hover  {
+	border-color: #e89d25;
+}
+
+.fontConteudoCadastroExterno {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: center;
+}
+
+.fonInputExterno {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b1aeae;
+	text-align: left;
+	background-color: #eeeef0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #004b80;
+	height: 30px;
+	width: 350px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 5px;
+	moz-placeholder: #e89d25;
+}
+
+
+
+
+
+
+
+
+/****************************ÁREAS*CONHECIMENTO*CAPA**************************/
+.fontChamadaAreaConhecimento {
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	text-align: center;
+	text-decoration: none;
+}
+.fontChamadaAreaConhecimento:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: center;
+}
+.fontChamadaRelacaoAreaConhecimento {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	text-align: left;
+}
+.fontChamadaRelacaoAreaConhecimentoLink {
+	color: #004b80;
+	text-decoration: none;
+}
+.fontChamadaRelacaoAreaConhecimentoLink:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/****************************INFORMAÇÕES**************************************/
+a.dcontexto{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #004b80;
+	text-decoration: none;	
+	position:relative; 
+	padding:0;
+  	cursor:help; 
+	text-align: justify;
+}
+
+a.dcontexto:hover{
+	background:transparent;
+}
+
+a.dcontexto span {
+	display: none;
+}
+
+a.dcontexto:hover span { 
+	display: block;
+  	position: absolute;
+  	width: 250px; 
+	left: -250px;
+	top: -70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: White;
+	padding: 5px 5px 5px 5px;
+	border:1px solid #00549a;
+  	background:#e1ebf4;
+  	color: #004b80;
+	text-align: justify;
+}
+
+/****************************INFORMAÇÕES*O*A**********************************/
+a.dcontextoOA{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #004b80;
+	text-decoration: none;	
+	position:relative; 
+	padding:0;
+  	cursor:help; 
+	text-align: justify;
+}
+
+a.dcontextoOA:hover{
+	background:transparent;
+}
+
+a.dcontextoOA span {
+	display: none;
+}
+
+a.dcontextoOA:hover span { 
+	display: block;
+  	position: absolute;
+  	width: 500px; 
+	left: -520px;
+	top: -400px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: White;
+	padding: 5px 5px 5px 5px;
+	border:1px solid #00549a;
+  	background:#e1ebf4;
+  	color: #004b80;
+	text-align: justify;
+}
+
+.fontDetalhar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #004b80;
+	text-decoration: none;	
+}
+
+/****************************BLOQUEIOS****************************************/
+.fontBloqueioAcesso {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #004b80;
+	margin-bottom: 50px;
+	margin-top: 50px;	
+	text-align: center;	
+}
+
+
+/****************************PESQUISA*CAPA************************************/
+.fontItemPesquisado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #cecece;
+	font-weight: lighter;
+	text-decoration: none;	
+}
+
+.fontLinkItemPesquisado {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #cecece;
+	padding-left: 10px;
+	font-weight: lighter;
+	text-decoration: none;	
+}
+.fontLinkItemPesquisado:hover {
+	color: #e89d25;
+}

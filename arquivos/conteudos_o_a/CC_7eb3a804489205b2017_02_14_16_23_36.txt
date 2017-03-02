@@ -1,0 +1,2 @@
+- limpar o BD   
+- cadastrar áreas de formação para cadastro do usuário

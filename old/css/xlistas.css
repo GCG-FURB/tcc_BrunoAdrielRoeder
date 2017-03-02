@@ -1,0 +1,23 @@
+.menuBloco {
+	text-align: center;
+	vertical-align: baseline;
+   display: inline;
+}
+
+.menuSuperiorDivisor {
+   display: inline;
+	width: 10px;
+}
+
+.menuSuperiorBotao {
+	text-align: center;
+   display: inline;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+.listaCapa {
+  list-style: none;
+
+  float: right;
+}
