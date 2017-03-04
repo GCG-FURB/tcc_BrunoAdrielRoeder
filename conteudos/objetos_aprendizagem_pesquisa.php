@@ -27,7 +27,7 @@
       $this->retornaCamposPesquisaSimples($campos, $termo, $eh_proprietario);
       echo "      <tr>\n";
       echo "        <td class=\"celConteudoCentralizado\" colspan=\"2\">\n";
-      echo "  		    <input type=\"button\" class=\"celConteudoBotao\" value=\"Pesquisar\" alt=\"Pesquisar\" title=\"Pesquisar\" onClick=\"valida(cadastro);\">\n";
+      echo "  		    <input type=\"button\" class=\"celConteudoBotao\" value=\"Pesquisar\" alt=\"Pesquisar\" title=\"Pesquisar\" onClick=\"valida(cadastro);\" onKeyPress=\"valida(cadastro);\">\n";
       echo "        </td>\n";
       echo "      </tr>\n";
       echo "    </table>\n";      
@@ -47,7 +47,7 @@
       if (isset($_SESSION['life_c_campos']))          {     $campos = $_SESSION['life_c_campos'];                    } else {        $_SESSION['life_c_campos'] = '';              $campos = array();        }
       if (isset($_SESSION['life_c_eh_proprietario'])) {     $eh_proprietario = $_SESSION['life_c_eh_proprietario'];  } else {        $_SESSION['life_c_eh_proprietario'] = '1';    $eh_proprietario = '1';   }
 
-      echo "  <p style=\"width:97%; text-align:right;\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" onClick=\"ocultarPesquisa();\"></p>\n";
+      echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarPesquisa(event);\" onKeyPress=\"ocultarPesquisa(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" /></a></p>\n";
 
       include "js/js_pesquisa_oa_avancada.js";
       echo "  <form method=\"POST\" name=\"cadastro\" id=\"cadastro\" action=\"".$_SESSION['life_link_completo']."pesquisar\" onSubmit=\"return validaPesquisa(this);\">\n";
@@ -60,7 +60,7 @@
       echo "    <input type=\"text\" maxlength=\"150\" name=\"termo\" id=\"termo\" value=\"".$termo."\" style=\"width:95%; height:30px;\" alt=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" title=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" class=\"fontConteudoCampoTextHintFiltroCapa\" placeholder=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" tabindex=\"1\"/>\n";
       echo "    <p class=\"fontConteudoCentralizado\">\n";
       //echo "  		<input type=\"image\" src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" onClick=\"desmarcarDigitou();\">\n";
-      echo "  		  <input type=\"button\" class=\"botao\" value=\"Pesquisar\" tabindex=\"1\" onClick=\"validaPesquisa(cadastro);\">\n";
+      echo "  		  <input type=\"button\" class=\"botao\" value=\"Pesquisar\" tabindex=\"1\" onClick=\"validaPesquisa(cadastro);\" onKeyPress=\"validaPesquisa(cadastro);\">\n";
       echo "    </p>\n";
       echo "  </div>\n";
       echo "  <div class=\"divPesquisaFiltros\">\n";

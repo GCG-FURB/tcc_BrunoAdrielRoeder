@@ -57,33 +57,42 @@ function alterarBorda(e,f) {
     if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'block';
       document.getElementById('tela_pesquisa').style.display = 'block';
+      document.getElementById("termo").focus();
     }
   }
-  function ocultarPesquisa() {
-    document.getElementById('fundo_tela').style.display = 'none';
-    document.getElementById('tela_pesquisa').style.display = 'none';
+  function ocultarPesquisa(event) {
+    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+      document.getElementById('fundo_tela').style.display = 'none';
+      document.getElementById('tela_pesquisa').style.display = 'none';
+    }
   }
 
   function chamarLogin(event) {
     if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'block';
       document.getElementById('tela_login').style.display = 'block';
+      document.getElementById("usuario").focus();
     }
   }
   function ocultarLogin(event) {
-    document.getElementById('fundo_tela').style.display = 'none';
-    document.getElementById('tela_login').style.display = 'none';
+    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+      document.getElementById('fundo_tela').style.display = 'none';
+      document.getElementById('tela_login').style.display = 'none';
+    }
   }
 
   function chamarCadastro(event) {
     if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'block';
       document.getElementById('tela_cadastro').style.display = 'block';
+      document.getElementById("nm_pessoa").focus();
     }
   }
-  function ocultarCadastro() {
-    document.getElementById('fundo_tela').style.display = 'none';
-    document.getElementById('tela_cadastro').style.display = 'none';
+  function ocultarCadastro(event) {
+    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+      document.getElementById('fundo_tela').style.display = 'none';
+      document.getElementById('tela_cadastro').style.display = 'none';
+    }
   }
 
   function abrirGerenciamentoUsuario() {
@@ -238,14 +247,6 @@ function ajustarStatus(posicao) {
     document.getElementById(linha).style.display = display;
   }
 }
-
-
-
-
-
-
-
-
 
 function mudandoTamanhoFonte() {
 }

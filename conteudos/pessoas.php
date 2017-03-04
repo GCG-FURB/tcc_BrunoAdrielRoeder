@@ -576,7 +576,7 @@
         }
         echo "    <tr>\n";
         echo "      <td class=\"celConteudo\" style=\"text-align:center;\" colspan=\"3\">\n";
-        echo "  	    <input type=\"button\" class=\"botao\" value=\"Salvar\" tabindex=\"1\" onClick=\"valida(cadastro);\">\n";
+        echo "  	    <input type=\"button\" class=\"botao\" value=\"Salvar\" tabindex=\"1\" onClick=\"valida(cadastro);\" onKeyPress=\"valida(cadastro);\">\n";
         echo "      </td>\n";
         echo "  	</tr>\n";
         echo "  </table>\n";
@@ -772,7 +772,7 @@
       
       echo "<div class=\"divAreaCadastro\">\n";
 
-      echo "  <p style=\"width:97%; text-align:right;\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" onClick=\"ocultarCadastro();\"></p>\n";
+      echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" /></a></p>\n";
 
       $eh_mostrar_mensagem_cadastro_login_redes = $conf->exibirMensagemRedesSociaisCadastroUsuario();
       $nm_site = $conf->retornaNomeSite();
@@ -867,7 +867,7 @@
       echo "              <input type=\"password\" maxlength=\"50\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"ds_senha\" id=\"ds_senha\" placeholder=\"Senha\" alt=\"".$senha."\" title=\"".$senha."\" value=\"\" onKeyPress=\"ehValidar('1'); ehValido('eh_senha_valido', '0');\" onBlur=\"validaSenha();\"><br />\n";
       echo "              <input type=\"password\" maxlength=\"50\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"ds_confirma_senha\" id=\"ds_confirma_senha\" placeholder=\"Confirmação da senha\" alt=\"Confirme sua senha\" title=\"Confirme sua senha\" value=\"\" onKeyPress=\"ehValidar('1'); ehValido('eh_senha_valido', '0');\" onBlur=\"validaConfirmacaoSenha();\"><br />\n";
       echo "              <input type=\"text\" maxlength=\"14\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"nr_cpf\" id=\"nr_cpf\" placeholder=\"CPF\" value=\"".$nr_cpf."\" alt=\"Informe seu CPF\" title=\"Informe seu CPF\" onKeyPress=\"ehValidar('1'); ehValido('eh_cpf_valido', '0'); mascaraCpf('nr_cpf')\"; onBlur=\"validaCpf('nr_cpf');\"><br />\n";
-      echo "  		        <input type=\"button\" class=\"botao\" value=\"Cadastre-me\" onClick=\"valida_proprio(cadastro_proprio);\">\n";
+      echo "  		        <input type=\"button\" class=\"botao\" value=\"Cadastre-me\" onClick=\"valida_proprio(cadastro_proprio);\" onKeyPress=\"valida_proprio(cadastro_proprio);\">\n";
       echo "            </p>\n";
       echo "          </form>\n";
       $util->posicionarCursor('cadastro', 'nm_pessoa');    
@@ -1043,7 +1043,7 @@
       echo "        <input type=\"text\" maxlength=\"100\" name=\"e_mail_senha\" id=\"e_mail_senha\"  class=\"fontConteudoCampoTextHint\"  style=\"width:100%;\"value=\"".$ds_username."\"><br />\n";
       echo "      </p>\n";
       echo "      <p class=\"fontConteudoLogin\" style=\"text-align:center;\">\n";
-      echo "  		  <input type=\"button\" class=\"botao\" value=\"Envie a senha\" alt=\"Envie a senha\" title=\"Envie a senha\" onClick=\"validaEnvioSenha(cadastro);\">\n";
+      echo "  		  <input type=\"button\" class=\"botao\" value=\"Envie a senha\" alt=\"Envie a senha\" title=\"Envie a senha\" onClick=\"validaEnvioSenha(cadastro);\" onKeyPress=\"validaEnvioSenha(cadastro);\">\n";
       echo "      </p>\n";
       echo "  </form>\n";
       echo "  </div>\n";
