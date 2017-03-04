@@ -428,7 +428,7 @@
     }
                                    
     public function inserirUsuario($ds_username, $ds_senha, $ds_permissoes, $dt_ultimo_acesso, $eh_ativo, $nr_tentativas_login, $ds_chave, $nm_usuario, $cd_origem, $cd_categoria_usuario) {
-      if (isset($_SESSION['life_codigo'])) {       $cd_usuario_cadastro = $_SESSION['life_codigo'];    } else {      $cd_usuario_cadastro = '';       }
+      if (isset($_SESSION['life_codigo'])) {       $cd_usuario_cadastro = $_SESSION['life_codigo'];    } else {      $cd_usuario_cadastro = '0';       }
       $dt_cadastro = date('Y-m-d');                                                                                                                   
       $sql  = "INSERT INTO life_usuarios ".
               "(cd_categoria_usuario, ds_username, ds_senha, ds_permissoes, dt_ultimo_acesso, eh_ativo, nr_tentativas_login, ds_chave, nm_usuario, cd_origem, cd_usuario_cadastro, dt_cadastro) ".
@@ -436,7 +436,7 @@
               "(\"$cd_categoria_usuario\", \"$ds_username\", \"$ds_senha\", \"$ds_permissoes\", \"$dt_ultimo_acesso\", \"$eh_ativo\", \"$nr_tentativas_login\", \"$ds_chave\", \"$nm_usuario\", \"$cd_origem\", \"$cd_usuario_cadastro\", \"$dt_cadastro\")";
       require_once 'includes/utilitarios.php';                                  $util= new Utilitario();
       $util->gerarLog($sql, 'usuario');            
-      mysql_query($sql) or die ("Erro no banco de dados! - TABELA USUÁRIOS");
+      mysql_query($sql) or die ("Erro no banco de dados! - TABELA USUÁRIOS". mysql_error());
       $saida = mysql_affected_rows();
       if ($saida > 0) {
         $sql  = "SELECT cd_usuario codigo ".
