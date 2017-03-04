@@ -366,7 +366,7 @@
 
     private function retornaCabecalhoEmail($nome_site) {
       return "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">".
-             "<html>".
+             "<html lang="pt-br">".
              "  <body style=\"text-align:center;\">".
              "    <table width=\"800\">".
              "      <tr>".
