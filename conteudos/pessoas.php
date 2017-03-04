@@ -772,7 +772,7 @@
       
       echo "<div class=\"divAreaCadastro\">\n";
 
-      echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" /></a></p>\n";
+      echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" /></a></p>\n";
 
       $eh_mostrar_mensagem_cadastro_login_redes = $conf->exibirMensagemRedesSociaisCadastroUsuario();
       $nm_site = $conf->retornaNomeSite();
