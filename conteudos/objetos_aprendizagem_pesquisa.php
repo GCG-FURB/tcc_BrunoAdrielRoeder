@@ -47,7 +47,7 @@
       if (isset($_SESSION['life_c_campos']))          {     $campos = $_SESSION['life_c_campos'];                    } else {        $_SESSION['life_c_campos'] = '';              $campos = array();        }
       if (isset($_SESSION['life_c_eh_proprietario'])) {     $eh_proprietario = $_SESSION['life_c_eh_proprietario'];  } else {        $_SESSION['life_c_eh_proprietario'] = '1';    $eh_proprietario = '1';   }
 
-      echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarPesquisa(event);\" onKeyPress=\"ocultarPesquisa(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" /></a></p>\n";
+      echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarPesquisa(event);\" onKeyPress=\"ocultarPesquisa(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" focus=\"this.style.cursor='pointer';\"/></a></p>\n";
 
       include "js/js_pesquisa_oa_avancada.js";
       echo "  <form method=\"POST\" name=\"cadastro\" id=\"cadastro\" action=\"".$_SESSION['life_link_completo']."pesquisar\" onSubmit=\"return validaPesquisa(this);\">\n";
