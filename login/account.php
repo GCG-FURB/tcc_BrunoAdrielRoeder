@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['google_data'])):header("Location:index.php");endif;
 ?>
-<html>
+<html lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login with Google Account by CodexWorld</title>
