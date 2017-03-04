@@ -36,7 +36,8 @@ function validaPesquisa(f) {
   }
 
   if (!informou) {
-    alert('Você não marcou nenhuma informação para pesquisa!')
+    alert('Você não marcou nenhuma informação para pesquisa!');
+    document.getElementById("termo").focus();
     return false;
   }
 

@@ -114,7 +114,7 @@
       if ($secao == '4') {
         $saida .= "       <span class=\"fontLinkMenuSuperiorInativo\">Cadastre-se</span>\n";
       } else {
-        $saida .= "       <a href=\"#\" onClick=\"chamarCadastro();\" class=\"fontLinkMenuSuperior\">Cadastre-se</a>\n";
+        $saida .= "       <a href=\"#\" onClick=\"chamarCadastro(event);\" onKeyPress=\"chamarCadastro(event);\" class=\"fontLinkMenuSuperior\">Cadastre-se</a>\n";
       }
       $saida .= "     </div>\n";
       $saida .= "     <div class=\"divDivisorBotaoMenuSuperiorDireita\"></div>\n";
@@ -122,7 +122,7 @@
       if ($secao == '4') {
         $saida .= "       <span class=\"fontLinkMenuSuperiorInativo\">Entre</span>\n";
       } else {
-        $saida .= "       <a href=\"#\" onClick=\"chamarLogin();\" class=\"fontLinkMenuSuperior\">Entre</a>\n";
+        $saida .= "       <a href=\"#\" onClick=\"chamarLogin(event);\" onKeyPress=\"chamarLogin(event);\" class=\"fontLinkMenuSuperior\">Entre</a>\n";
       }
       $saida .= "     </div>\n";
       $saida .= "     <div class=\"divDivisorBotaoMenuSuperiorDireita\"></div>\n";
@@ -300,11 +300,11 @@
         echo "      <a href=\"".$_SESSION['life_link_completo']."meus-objetos-aprendizagem\"><img src=\"".$_SESSION['life_link_completo']."icones/meus_objetos_aprendizagem.png\" alt=\"Meus Objetos de Aprendizagem\" title=\"Meus Objetos de Aprendizagem\" border=\"0\"></a>\n";
       }
       echo "      <a href=\"".$_SESSION['life_link_completo']."como-usar\"><img src=\"".$_SESSION['life_link_completo']."icones/como_usar.png\" alt=\"Como Usar\" title=\"Como Usar\" border=\"0\"></a>\n";
-      echo "      <a href=\"#\" onClick=\"chamarPesquisa();\"><img src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" border=\"0\"></a>\n";
+      echo "      <a href=\"#\" onClick=\"chamarPesquisa(event);\" onKeyPress=\"chamarPesquisa(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" border=\"0\"></a>\n";
       echo "      <input type=\"hidden\" name=\"tamanho_fonte\" id=\"tamanho_fonte\"/>\n";
-      echo "      <img src=\"".$_SESSION['life_link_completo']."icones/fonte_diminuir.png\" alt=\"Diminuir tamanho da letra\" title=\"Diminuir tamanho da letra\" border=\"0\" onClick=\"mudaTamanho('d');\">\n";
-      echo "      <img src=\"".$_SESSION['life_link_completo']."icones/fonte_normal.png\" alt=\"Deixar a letra no tamanho padrão\" title=\"Deixar a letra no tamanho padrão\" border=\"0\" onClick=\"mudaTamanho('p');\">\n";
-      echo "      <img src=\"".$_SESSION['life_link_completo']."icones/fonte_aumentar.png\" alt=\"Aumentar tamanho da letra\" title=\"Aumentar tamanho da letra\" border=\"0\" onClick=\"mudaTamanho('a');\">\n";
+      echo "      <a href=\"javascript:void()\" onClick=\"mudaTamanho('d');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == \"click\"){mudaTamanho('d');}\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_diminuir.png\" alt=\"Diminuir tamanho da letra\" title=\"Diminuir tamanho da letra\" border=\"0\"></a>\n";
+      echo "      <a href=\"javascript:void()\" onClick=\"mudaTamanho('p');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == \"click\"){mudaTamanho('p');}\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_normal.png\" alt=\"Deixar a letra no tamanho padrão\" title=\"Deixar a letra no tamanho padrão\" border=\"0\"></a>\n";
+      echo "      <a href=\"javascript:void()\" onClick=\"mudaTamanho('a');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == \"click\"){mudaTamanho('a');}\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_aumentar.png\" alt=\"Aumentar tamanho da letra\" title=\"Aumentar tamanho da letra\" border=\"0\"></a>\n";
     }
 
     public function retornaDadosMenu($secao, $subsecao, $item) {

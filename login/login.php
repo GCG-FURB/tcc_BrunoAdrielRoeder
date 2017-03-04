@@ -52,7 +52,7 @@
       if (!isset($_SESSION['life_bloqueio_login'])) {        $_SESSION['life_bloqueio_login'] = '0';      }
 
       echo "<div class=\"divAreaLogin\">\n";
-      echo "  <p style=\"width:97%; text-align:right;\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de login\" title=\"Fechar tela de login\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" onClick=\"ocultarLogin();\"></p>\n";
+      echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarLogin(event);\" onKeyPress=\"ocultarLogin(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de login\" title=\"Fechar tela de login\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\"></a></p>\n";
       if (isset($_SESSION['life_erro_login'])) {
         echo "    <p class=\"fontConteudoAlerta\">".$_SESSION['life_erro_login']."</p>\n";
         unset($_SESSION['life_erro_login']);
