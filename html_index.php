@@ -11,29 +11,45 @@
       require_once 'conteudos/conteudo.php';                                    $con= new Conteudo();
 
       echo "  <body class=\"geral\" onKeyUp=\"marcarDigitou();\">\n";
-      echo "    <input type=\"hidden\" name=\"digitou\" id=\"digitou\" value=\"0\" />\n";
-      echo "      <div  class=\"divTopo\" id=\"topoSiteControleFonte\">\n";
-      echo "        <div  class=\"divConteudoTopo\">\n";
-      echo "          <div  class=\"divConteudoEsquerdaTopo\">\n";
-      $menu->retornaMenuSuperior($secao, $subsecao, $item, 'SE');
-      echo "          </div>\n";
-      echo "          <div class=\"divLogo\">\n";
-      $conf->retornaLogoSite();
-      echo "          </div>\n";
-      echo "          <div  class=\"divConteudoDireitaTopo\">\n";
-      if ($login->estaLogado()) {
-        $login->retornaUsuarioLogado();
-      } else {
-        $menu->retornaMenuAcessoCadastro($secao);
-      }
-      echo "          </div>\n";
-      echo "        </div>\n";
-      echo "      </div>\n";
+
+      /**
+       *Bruno Roeder acessibilidade: adicionado meu ssuperior de acessibilidae, seguindo diretriz 2.4.1 
+       *que diz que o primeiro link deve ser de acessibiliadde levando ao conteudo do site e logo em seguida ao menu
+       **/
       echo "      <div  class=\"divBaseTopo\">\n";
       echo "        <div  class=\"divMenuAcessibilidade\">\n";
       $menu->retornaMenuAcessibilidade($pagina, $atual);
       echo "        </div>\n";
       echo "      </div>\n";
+
+      echo "    <div id=\"menu\">\n";
+      echo "      <input type=\"hidden\" name=\"digitou\" id=\"digitou\" value=\"0\" />\n";
+      echo "        <div  class=\"divTopo\" id=\"topoSiteControleFonte\">\n";
+      echo "          <div  class=\"divConteudoTopo\">\n";
+      echo "            <div  class=\"divConteudoEsquerdaTopo\">\n";
+      $menu->retornaMenuSuperior($secao, $subsecao, $item, 'SE');
+      echo "            </div>\n";
+      echo "            <div class=\"divLogo\">\n";
+      $conf->retornaLogoSite();
+      echo "            </div>\n";
+      echo "            <div  class=\"divConteudoDireitaTopo\">\n";
+      if ($login->estaLogado()) {
+        $login->retornaUsuarioLogado();
+      } else {
+        $menu->retornaMenuAcessoCadastro($secao);
+      }
+      echo "            </div>\n";
+      echo "          </div>\n";
+      echo "        </div>\n";
+      echo "      </div>\n";
+
+      // Bruno Roeder: barra de pesquisa fora da barra de acessibilidade
+      echo "      <div  class=\"divBaseInferior\">\n";
+      echo "        <div  class=\"divMenuInferior\">\n";
+      $menu->retornaMenuBarraInferior($pagina, $atual);
+      echo "        </div>\n";
+      echo "      </div>\n";
+
       if (!$login->estaLogado()) {
         $con->controlaExibicaoTopoConteudo($secao, $subsecao, $item, $permissao, $pagina, $atual);
       }

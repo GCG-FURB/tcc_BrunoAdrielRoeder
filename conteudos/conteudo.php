@@ -95,7 +95,7 @@
           break;
 
           default:
-            echo "    <div class=\"divCorpoSite\">\n";
+            echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
             echo "      <div class=\"divConteudosSite\">\n";
             $this->apresentaConteudo($secao, $subsecao, $item, $permissoes, $pagina, $lista_paginas, $item_selecionado);
             echo "      </div>\n";
@@ -136,7 +136,7 @@
           case '3':
             $_SESSION['life_exibe_login'] = '1';
             //home
-            echo "    <div class=\"divCorpoSite\">\n";
+            echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
             echo "      <div class=\"divConteudosSite\">\n";
             require_once 'conteudos/home.php';                                  $obj = new Home();
             $obj->controleExibicaoPublica($secao, $subsecao, $item, $pagina, $lista_paginas);
@@ -149,7 +149,7 @@
           case '4':
             if (isset($_SESSION['life_cadastro_proprio_usuario_acao'])) {
               if ($_SESSION['life_cadastro_proprio_usuario_acao'] == 'a') {
-                echo "    <div class=\"divCorpoSite\">\n";
+                echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
                 echo "      <div class=\"divConteudosSite\">\n";
                 //cadastro
                 require_once 'conteudos/pessoas.php';                           $obj = new Pessoa();
@@ -160,7 +160,7 @@
                 //home
                 $atual = array();       $atual[0] = 'home';          $pagina = 'home';
                 $secao = '0';           $subsecao = '0';             $item = '0';
-            echo "    <div class=\"divCorpoSite\">\n";
+            echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
             echo "      <div class=\"divConteudosSite\">\n";
             require_once 'conteudos/home.php';                                  $obj = new Home();
             $obj->controleExibicaoPublica($secao, $subsecao, $item, $pagina, $lista_paginas);
@@ -170,7 +170,7 @@
               }
               unset($_SESSION['life_cadastro_proprio_usuario_acao']);
             } else {
-                echo "    <div class=\"divCorpoSite\">\n";
+                echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
                 echo "      <div class=\"divConteudosSite\">\n";
                 //cadastro
                 require_once 'conteudos/pessoas.php';                           $obj = new Pessoa();
@@ -254,7 +254,7 @@
               $obj->controleExibicao($secao, $subsecao, $item);
             } else {
               require_once 'includes/configuracoes.php';                        $conf= new Configuracao();
-              echo "    <div class=\"divCorpoSite\">\n";
+              echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
               echo "      <div class=\"divConteudosSite\">\n";
               echo "        <h2>".$conf->retornaTituloLogadoMeusObjetosAprendizagem()."</h2>\n";
               echo "        <p>".$conf->retornaTextoLogadoMeusObjetosAprendizagem()."</p>\n";
@@ -282,7 +282,7 @@
 
           case '32':
             require_once 'conteudos/pessoas.php';                               $obj = new Pessoa();
-            echo "    <div class=\"divCorpoSite\">\n";
+            echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
             echo "      <div class=\"divConteudosSite\">\n";
             if ($obj->controleExibicaoFichaCadastral($secao, $subsecao, $item, $pagina, $lista_paginas)) {
               //home
@@ -301,7 +301,7 @@
 
           case '33':
             require_once 'conteudos/pedidos_alteracao_categorias.php';          $obj = new PedidoAlteracaoCategoria();
-            echo "    <div class=\"divCorpoSite\">\n";
+            echo "    <div class=\"divCorpoSite\" id=\"content\">\n";
             echo "      <div class=\"divConteudosSite\">\n";
             echo "        <div class=\"divDadosCadastrais\">\n";
             if ($obj->controleExibicaoAlterarCategoria($secao, $subsecao, $item, $pagina, $lista_paginas)) {
