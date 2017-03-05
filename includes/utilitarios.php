@@ -427,8 +427,11 @@
 
 //******************************************************************************    
     
-    public function campoHidden($nome, $valor) {
-      echo "      <input type=\"hidden\" name=\"".$nome."\" id=\"".$nome."\" value=\"".$valor."\" />\n";    
+    public function campoHidden($nome, $valor, $id = '') {
+      if($id == ''){
+        $id = $nome;
+      }
+      echo "      <input type=\"hidden\" name=\"".$nome."\" id=\"".$id."\" value=\"".$valor."\" />\n";    
     }
 
     public function linhaComentario($descricao) {

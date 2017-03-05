@@ -772,7 +772,7 @@
       
       echo "<div class=\"divAreaCadastro\">\n";
 
-      echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" focus=\"this.style.cursor='pointer';\" /></a></p>\n";
+      echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\" /></a></p>\n";
 
       $eh_mostrar_mensagem_cadastro_login_redes = $conf->exibirMensagemRedesSociaisCadastroUsuario();
       $nm_site = $conf->retornaNomeSite();
@@ -850,7 +850,7 @@
 
       require_once 'js/js_cadastro_pessoa_proprio.js';
       echo "          <form  name=\"cadastro\" id=\"cadastro_proprio\" action=\"".$_SESSION['life_link_completo']."cadastre-se/salvar\" method=\"POST\" onSubmit=\"return valida(this);\">\n";
-      $util->campoHidden('eh_form', '1');
+      $util->campoHidden('eh_form', '1', 'eh_form-cadastro');
       echo "            <p class=\"fontConteudoCadastroExterno\">\n";
       echo "              <input type=\"hidden\" name=\"validar\" id=\"validar\" value=\"0\">\n";
       echo "              <input type=\"hidden\" name=\"nr_letras_maiusculas_senha\" id=\"nr_letras_maiusculas_senha\" value=\"".$nr_letras_maiusculas_senha."\">\n";
@@ -1037,7 +1037,7 @@
       echo "    <h2>Esqueci a senha de acesso ao Portal ".$nm_site."</h2>\n";
       include "js/js_lembrar_senha_proprio.js";
       echo "    <form class=\"fontConteudoLogin\" id=\"logar\" name=\"logar\" method=\"post\" action=\"".$_SESSION['life_link_completo']."esqueceu-a-senha/enviar\" onSubmit=\"return validaEnvioSenha(this);\">\n";
-      $util->campoHidden('eh_form', '1');
+      $util->campoHidden('eh_form', '1', 'eh_form-login');
       echo "      <p class=\"fontConteudoLogin\">\n";
       echo "        E-mail<br />\n";
       echo "        <input type=\"text\" maxlength=\"100\" name=\"e_mail_senha\" id=\"e_mail_senha\"  class=\"fontConteudoCampoTextHint\"  style=\"width:100%;\"value=\"".$ds_username."\"><br />\n";
