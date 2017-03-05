@@ -72,9 +72,9 @@
       echo "      </p>\n";
       echo "      <p class=\"fontConteudoLogin\">\n";
       if ($_SESSION['life_bloqueio_login'] == '1') {
-        echo "  		  <input type=\"button\" class=\"botao\" value=\"Entre e desbloqueie\" alt=\"Efetuar Login\" title=\"=\"Efetuar Login\" onClick=\"desmarcarDigitou();document.getElementById('login').submit();\">\n";
+        echo "  		  <input type=\"sumbit\" class=\"botao\" value=\"Entre e desbloqueie\" alt=\"Efetuar Login\" title=\"=\"Efetuar Login\" onClick=\"desmarcarDigitou();document.getElementById('login').submit();\">\n";
       } else {
-        echo "  		  <input type=\"button\" class=\"botao\" value=\"Entre\" alt=\"Efetuar Login\" title=\"=\"Efetuar Login\" onClick=\"desmarcarDigitou();document.getElementById('login').submit();\">\n";
+        echo "  		  <input type=\"submit\" class=\"botao\" value=\"Entre\" alt=\"Efetuar Login\" title=\"=\"Efetuar Login\" onClick=\"desmarcarDigitou();document.getElementById('login').submit();\">\n";
         echo "        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
         echo "        <a href=\"".$_SESSION['life_link_completo']."esqueceu-a-senha\" class=\"fontLinkLogin\">Esqueci a senha</a>\n";
       }
