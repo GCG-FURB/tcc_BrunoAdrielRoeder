@@ -121,6 +121,12 @@ class HTML
         $oap = new ObjetoAprendizagemPesquisa();
         $oap->listarOpcoesPesquisaCapa($secao, $subsecao, $item);
         echo "    </div>\n";
+
+        echo "<script type=\"text/javascript\">\n";
+        echo "mudaTamanho('$tamanho');\n";
+        echo "</script>\n";
+
+
         echo "    </body>\n";
         echo "  </html>\n";
     }
