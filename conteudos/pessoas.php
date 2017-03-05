@@ -520,7 +520,7 @@ class Pessoa
             $util->campoHidden('nr_cpf', $nr_cpf);
             $util->linhaDuasColunasComentario('CPF ', $nr_cpf);
         } else {
-            $util->linhaUmCampoTextAcao(1, 'CPF ', 'nr_cpf', 14, 100, $nr_cpf, " onKeyPress=\"mascaraCpf('nr_cpf')\"; onBlur=\"validaCpf('nr_cpf');\" ");
+            $util->linhaUmCampoTextAcao(1, 'CPF ', 'nr_cpf', 14, 100, $nr_cpf, " onKeyPress=\"mascaraCpf('nr_cpf')\";\" onBlur=\"validaCpf('nr_cpf');\" ");
         }
 
         $util->linhaComentario('&nbsp;');
@@ -848,7 +848,7 @@ class Pessoa
             $util->campoHidden('nr_cpf', $nr_cpf);
             $util->linhaDuasColunasComentario('CPF ', $nr_cpf);
         } else {
-            $util->linhaUmCampoTextAcao(1, 'CPF ', 'nr_cpf', 14, 100, $nr_cpf, " onKeyPress=\"mascaraCpf('nr_cpf')\"; onBlur=\"validaCpf('nr_cpf');\" ");
+            $util->linhaUmCampoTextAcao(1, 'CPF ', 'nr_cpf', 14, 100, $nr_cpf, " onKeyPress=\"mascaraCpf('nr_cpf')\";\" onBlur=\"validaCpf('nr_cpf');\" ");
         }
 
         $util->linhaComentario('&nbsp;');
@@ -941,7 +941,7 @@ class Pessoa
       
         echo "<div class=\"divAreaCadastro\">\n";
 
-        echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" /></a></p>\n";
+        echo "<p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarCadastro(event);\" onKeyPress=\"ocultarCadastro(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de cadastro\" title=\"Fechar tela de cadastro\" border=\"0\" /></a></p>\n";
 
         $eh_mostrar_mensagem_cadastro_login_redes = $conf->exibirMensagemRedesSociaisCadastroUsuario();
         $nm_site = $conf->retornaNomeSite();
@@ -1038,7 +1038,7 @@ class Pessoa
         $senha = "Infome uma Senha. Ela deve conter no mínimo ".$nr_caracteres_senha." caracteres, sendo ao menos ".$nr_letras_maiusculas_senha." letra(s) maiúscula(s), ".$nr_letras_minusculas_senha." letra(s) minúscula(s) e ".$nr_numeros_senha." número(s)";
         echo "              <input type=\"password\" maxlength=\"50\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"ds_senha\" id=\"ds_senha\" placeholder=\"Senha\" title=\"".$senha."\" value=\"\" onKeyPress=\"ehValidar('1'); ehValido('eh_senha_valido', '0');\" onBlur=\"validaSenha();\"><br />\n";
         echo "              <input type=\"password\" maxlength=\"50\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"ds_confirma_senha\" id=\"ds_confirma_senha\" placeholder=\"Confirmação da senha\" title=\"Confirme sua senha\" value=\"\" onKeyPress=\"ehValidar('1'); ehValido('eh_senha_valido', '0');\" onBlur=\"validaConfirmacaoSenha();\"><br />\n";
-        echo "              <input type=\"text\" maxlength=\"14\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"nr_cpf\" id=\"nr_cpf\" placeholder=\"CPF\" value=\"".$nr_cpf."\" title=\"Informe seu CPF\" onKeyPress=\"ehValidar('1'); ehValido('eh_cpf_valido', '0'); mascaraCpf('nr_cpf'); onBlur=\"validaCpf('nr_cpf');\"><br />\n";
+        echo "              <input type=\"text\" maxlength=\"14\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" name=\"nr_cpf\" id=\"nr_cpf\" placeholder=\"CPF\" value=\"".$nr_cpf."\" title=\"Informe seu CPF\" onKeyPress=\"ehValidar('1'); ehValido('eh_cpf_valido', '0'); mascaraCpf('nr_cpf');\" onBlur=\"validaCpf('nr_cpf');\"><br />\n";
         echo "  		        <input type=\"submit\" class=\"botao\" value=\"Cadastre-me\" onClick=\"valida_proprio(cadastro_proprio);\" onKeyPress=\"valida_proprio(cadastro_proprio);\">\n";
         echo "            </p>\n";
         echo "          </form>\n";
