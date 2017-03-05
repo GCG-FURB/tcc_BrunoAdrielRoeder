@@ -90,7 +90,7 @@ class ObjetoAprendizagemPesquisa
             $eh_proprietario = '1';
         }
 
-        echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarPesquisa(event);\" onKeyPress=\"ocultarPesquisa(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" /></a></p>\n";
+        echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarPesquisa(event);\" onKeyPress=\"ocultarPesquisa(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar formulário de pesquisa\" title=\"Fechar formulário de pesquisa\" border=\"0\" /></a></p>\n";
 
         include "js/js_pesquisa_oa_avancada.js";
         echo "  <form method=\"POST\" name=\"cadastro\" id=\"cadastro\" action=\"".$_SESSION['life_link_completo']."pesquisar\" onSubmit=\"return validaPesquisa(this);\">\n";

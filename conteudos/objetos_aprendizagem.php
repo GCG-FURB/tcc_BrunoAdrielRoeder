@@ -1198,7 +1198,7 @@ class ObjetoAprendizagem
             } else {
                 $diferenca = 0;
             }
-            echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"".$largura."\" height=\"".$altura."\" style=\"margin-top:1px;\">\n";
+            echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"". (int)$largura."\" height=\"". (int)$altura."\" style=\"margin-top:1px;\">\n";
             echo "      </div>\n";
             echo "      <p class=\"fontTituloItemTopoCapa\">".$it['ds_identifier']."</p>\n";
             $areas = $gac->listaAreasConhecimento($it['cd_general']);
@@ -1306,7 +1306,7 @@ class ObjetoAprendizagem
                 } else {
                     $diferenca = 0;
                 }
-                echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"".$largura."\" height=\"".$altura."\" style=\"margin-top:1px;\">\n";
+                echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"".(int)$largura."\" height=\"".(int)$altura."\" style=\"margin-top:1px;\">\n";
                 echo "      </div>\n";
                 echo "      <p class=\"fontTituloItemMeioCapa\">".$util->abreviar($it['ds_identifier'], 11)."</p>\n";
                 $areas = $gac->listaAreasConhecimento($it['cd_general']);

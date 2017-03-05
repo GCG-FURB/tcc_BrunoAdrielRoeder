@@ -62,7 +62,7 @@ class Login
         }
 
         echo "<div class=\"divAreaLogin\">\n";
-        echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:void()\" onClick=\"ocultarLogin(event);\" onKeyPress=\"ocultarLogin(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de login\" title=\"Fechar tela de login\" border=\"0\"></a></p>\n";
+        echo "  <p style=\"width:97%; text-align:right;\"><a href=\"javascript:;\" onClick=\"ocultarLogin(event);\" onKeyPress=\"ocultarLogin(event);\" onMouseOver=\"this.style.cursor='pointer';\" onFocus=\"this.style.cursor='pointer';\"><img src=\"".$_SESSION['life_link_completo']."icones/fechar_formulario.png\" alt=\"Fechar tela de login\" title=\"Fechar tela de login\" border=\"0\"></a></p>\n";
         if (isset($_SESSION['life_erro_login'])) {
             echo "    <p class=\"fontConteudoAlerta\">".$_SESSION['life_erro_login']."</p>\n";
             unset($_SESSION['life_erro_login']);
