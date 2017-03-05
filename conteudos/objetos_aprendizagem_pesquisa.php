@@ -60,7 +60,7 @@
       echo "    <input type=\"text\" maxlength=\"150\" name=\"termo\" id=\"termo\" value=\"".$termo."\" style=\"width:95%; height:30px;\" alt=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" title=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" class=\"fontConteudoCampoTextHintFiltroCapa\" placeholder=\"Informe o termo de pesquisa e/ou use os campos de pesquisa ao lado\" tabindex=\"1\"/>\n";
       echo "    <p class=\"fontConteudoCentralizado\">\n";
       //echo "  		<input type=\"image\" src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" onClick=\"desmarcarDigitou();\">\n";
-      echo "  		  <input type=\"button\" class=\"botao\" value=\"Pesquisar\" tabindex=\"1\" onClick=\"validaPesquisa(cadastro);\" onKeyPress=\"validaPesquisa(cadastro);\">\n";
+      echo "  		  <input type=\"submit\" class=\"botao\" value=\"Pesquisar\" tabindex=\"1\" onClick=\"validaPesquisa(cadastro);\" onKeyPress=\"validaPesquisa(cadastro);\">\n";
       echo "    </p>\n";
       echo "  </div>\n";
       echo "  <div class=\"divPesquisaFiltros\">\n";
