@@ -1172,7 +1172,7 @@ class ObjetoAprendizagem
         foreach ($itens as $it) {
             $listados[] = $it['cd_objeto_aprendizagem'];
             echo "  <a href=\"".$_SESSION['life_link_completo']."objetos/".$it['lk_seo']."\">\n";
-            echo "    <div class=\"divUmElementoCapaTopo\" style=\"background-color:".$it['ds_cor'].";\">\n";
+            echo "    <div class=\"divUmElementoCapaTopo\" style=\"background-color:".$it['ds_cor']."; color: #004B80;\">\n";
             echo "      <div class=\"divFotoElementoCapaTopo\">\n";
             if ($it['ds_arquivo_imagem_especifica'] != '') {
                 $ds_arquivo_foto = $_SESSION['life_link_completo'].$it['ds_pasta_arquivo_imagem'].$it['ds_arquivo_imagem_especifica'];
@@ -1280,7 +1280,7 @@ class ObjetoAprendizagem
             if ((!$achou) && ($i <= $nr_limite)) {
                 $listados[] = $it['cd_objeto_aprendizagem'];
                 echo "  <a href=\"".$_SESSION['life_link_completo']."objetos/".$it['lk_seo']."\">\n";
-                echo "    <div class=\"divUmElementoCapaMeio\" style=\"background-color:".$it['ds_cor'].";\">\n";
+                echo "    <div class=\"divUmElementoCapaMeio\" style=\"background-color:".$it['ds_cor']."; color: #004B80;\">\n";
                 echo "      <div class=\"divFotoUmElementoCapaMeio\">\n";
                 if ($it['ds_arquivo_imagem_especifica'] != '') {
                     $ds_arquivo_foto = $_SESSION['life_link_completo'].$it['ds_pasta_arquivo_imagem'].$it['ds_arquivo_imagem_especifica'];
