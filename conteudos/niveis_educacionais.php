@@ -401,13 +401,13 @@ class NivelEducacional
         echo "          </select>\n";
         if ($exibir_ajuda == '1') {
             echo "        <a href=\"#\" class=\"dcontexto\">\n";
-            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help.png\"border=\"0\">\n";
+            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help.png\" border=\"0\">\n";
             echo "          <span class=\"fontdDetalhar\">\n";
             echo "            Selecione o nível educacional desejado para pesquisar por objetos de aprendizagem.\n";
             echo "          </span>\n";
             echo "        </a>\n";
         } else {
-            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\"border=\"0\" alt=\"Sem Ajuda Disponível\" title=\"Sem Ajuda Disponível\">\n";
+            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\" border=\"0\" alt=\"Sem Ajuda Disponível\" title=\"Sem Ajuda Disponível\">\n";
         }
     }
 //**************BANCO DE DADOS**************************************************

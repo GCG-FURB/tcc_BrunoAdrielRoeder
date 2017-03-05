@@ -357,13 +357,13 @@ class Pessoa
             echo "      </td>\n";
             echo "      <td class=\"celConteudo\">\n";
             echo "        <a href=\"#\" class=\"dcontexto\">\n";
-            echo "          <img src=\"icones/informacoes.png\"border=\"0\">\n";
+            echo "          <img src=\"icones/informacoes.png\" border=\"0\">\n";
             echo "          <span class=\"fontdDetalhar\">\n";
             echo $this->detalharPessoa($it['cd_pessoa']);
             echo "          </span>\n";
             echo "        </a>\n";
             echo "        <a href=\"#\" class=\"dcontexto\">\n";
-            echo "          <img src=\"icones/contatos.png\"border=\"0\">\n";
+            echo "          <img src=\"icones/contatos.png\" border=\"0\">\n";
             echo "          <span class=\"fontdDetalhar\">\n";
             echo $con->detalharContato($it['cd_contato']);
             echo "          </span>\n";
