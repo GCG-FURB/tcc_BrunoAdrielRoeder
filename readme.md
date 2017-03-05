@@ -6,3 +6,7 @@ Após configurado o ambiente:
 
 * Importar a Base de Dados, disponibilizado nesse repositório
 * No arquivo includes/conectar.php deve-se configurar os dados deacesso ao banco de dados, sendo o primeiro parâmetro o host, o segundo o nome do banco de dados, o terceiro o usuário do Banco e por último a senha do Banco. Exemplo: new Conexao("localhost", "inversos", "root", "123456");
+
+## InVersos de Teste ##
+
+Há um ambiente com as alterações do portal disponível em [http://inversos.brunoroeder.com.br/](http://inversos.brunoroeder.com.br/)
