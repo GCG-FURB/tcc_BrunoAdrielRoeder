@@ -64,11 +64,11 @@
       $util->campoHidden('eh_form', '1', 'eh_form-login-login');
       echo "      <p class=\"fontConteudoLogin\">\n";
       echo "        E-mail<br />\n";
-      echo "        <input type=\"text\" maxlength=\"100\" name=\"usuario\" id=\"usuario\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" />\n";
+      echo "        <input type=\"text\" maxlength=\"100\" name=\"usuario\" id=\"usuario\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" alt=\"Informe o seu E-mail\" title=\"Informe o seu E-mail\" />\n";
       echo "      </p>\n";
       echo "      <p class=\"fontConteudoLogin\">\n";
       echo "        Senha<br />\n";
-      echo "        <input type=\"password\" maxlength=\"50\" name=\"senha\" id=\"senha\" size=\"40%\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" />\n";
+      echo "        <input type=\"password\" maxlength=\"50\" name=\"senha\" id=\"senha\" size=\"40%\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" alt=\"Informe sua Senha\" title=\"Informe sua Senha\" />\n";
       echo "      </p>\n";
       echo "      <p class=\"fontConteudoLogin\">\n";
       if ($_SESSION['life_bloqueio_login'] == '1') {
@@ -88,7 +88,7 @@
       echo "    <br /><br /><br />\n";
       echo "    <p class=\"fontComandosCentralizados\">\n";
       echo "    <a href=\"https://www.facebook.com/dialog/oauth?client_id=1711998152372582&redirect_uri=http://www.inversos.com.br/logar.php\"><img src=\"".$_SESSION['life_link_completo']."icones/botao_login_facebook.png\" alt=\"Entrar com usuário do Facebook\" title=\"Entrar com usuário do Facebook\" border=\"0\"></a>\n";
-      echo "    <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" style=\"width:70px;\">\n";
+      echo "    <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" style=\"width:70px;\" title=\"Espaço\" alt=\"Espaço\">\n";
 
       include_once("login/src/Google_Client.php");
       include_once("login/src/contrib/Google_Oauth2Service.php");

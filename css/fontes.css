@@ -135,6 +135,9 @@
 .fontLink:hover {
 	text-decoration: underline;
 }
+.fontLink.patrocinador {
+	margin-right: 20px;
+}
 .fontLinkSelecionado {
 	color: #004b80;
 	font-weight: bolder;

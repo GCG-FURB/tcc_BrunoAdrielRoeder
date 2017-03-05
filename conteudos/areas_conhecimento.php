@@ -363,13 +363,13 @@
       echo "          </select>\n";
       if ($exibir_ajuda == '1') {
         echo "        <a href=\"#\" class=\"dcontexto\">\n";
-        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help.png\"border=\"0\">\n";
+        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help.png\"border=\"0\" title=\"Ajuda\" alt=\"Ajuda\">\n";
         echo "          <span class=\"fontdDetalhar\">\n";
         echo "            Selecione a área de conhecimento desejada para pesquisar por Objetos de Aprendizagem.\n";
         echo "          </span>\n";
         echo "        </a>\n";
       } else {
-        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\"border=\"0\">\n";
+        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\"border=\"0\" title=\"Sem Ajuda Disponível\" alt=\"Sem Ajuda Disponível\">\n";
       }
     }
     

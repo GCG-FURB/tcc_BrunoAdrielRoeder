@@ -1011,7 +1011,6 @@
         } else {
           $diferenca = 0;
         }
-        echo "        <img src=\"".$_SESSION['life_link_completo']."icones/espacador_horizontal.png\" height=\"".$diferenca."\">\n";
         echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"".$largura."\" height=\"".$altura."\" style=\"margin-top:1px;\">\n";
         echo "      </div>\n";
         echo "      <p class=\"fontTituloItemTopoCapa\">".$it['ds_identifier']."</p>\n";
@@ -1112,7 +1111,6 @@
           } else {
             $diferenca = 0;
           }
-          echo "        <img src=\"".$_SESSION['life_link_completo']."icones/espacador_horizontal.png\" height=\"".$diferenca."\">\n";
           echo "        <img src=\"".$ds_arquivo_foto."\" alt=\"".$it['nm_objeto_aprendizagem']."\" title=\"".$it['nm_objeto_aprendizagem']."\" border=\"0\" width=\"".$largura."\" height=\"".$altura."\" style=\"margin-top:1px;\">\n";
           echo "      </div>\n";
           echo "      <p class=\"fontTituloItemMeioCapa\" alt=\"".$it['ds_identifier']."\" title=\"".$it['ds_identifier']."\">".$util->abreviar($it['ds_identifier'], 11)."</p>\n";

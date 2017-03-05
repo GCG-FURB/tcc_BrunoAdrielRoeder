@@ -290,9 +290,8 @@
       $itens = $this->selectPatrocinadoresCorrentes();
 
       foreach ($itens as $it) {
-        echo "        <img src=\"".$_SESSION['life_link_completo']."icones/espacador_patrocinios.png\">\n";
         if ($it['ds_link_patrocinador'] != '') {
-          echo "      <a href=\"".$it['ds_link_patrocinador']."\" target=\"_blank\" class=\"fontLink\"><img src=\"".$_SESSION['life_link_completo']."fotos/patrocinadores/".$it['ds_logo']."\" alt=\"".$it['nm_patrocinador']."\" title=\"".$it['nm_patrocinador']."\" border=\"0\" height=\"50\"></a>\n";
+          echo "      <a href=\"".$it['ds_link_patrocinador']."\" target=\"_blank\" class=\"fontLink patrocinador\"><img src=\"".$_SESSION['life_link_completo']."fotos/patrocinadores/".$it['ds_logo']."\" alt=\"".$it['nm_patrocinador']."\" title=\"".$it['nm_patrocinador']."\" border=\"0\" height=\"50\"></a>\n";
         } else {
           echo "        <img src=\"".$_SESSION['life_link_completo']."fotos/patrocinadores/".$it['ds_logo']."\" alt=\"".$it['nm_patrocinador']."\" title=\"".$it['nm_patrocinador']."\" border=\"0\" height=\"50\">\n";
         }

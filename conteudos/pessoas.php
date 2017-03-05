@@ -801,7 +801,7 @@
         echo "      <br /><br />\n";
         echo "      <p class=\"fontComandosCentralizados\" style=\"margin-left:-10px;\">\n";
         echo "        <a href=\"https://www.facebook.com/dialog/oauth?client_id=1711998152372582&redirect_uri=http://www.inversos.com.br/logar.php\"><img src=\"".$_SESSION['life_link_completo']."icones/botao_login_facebook.png\" alt=\"Entrar com usuário do Facebook\" title=\"Entrar com usuário do Facebook\" border=\"0\"></a>\n";
-        echo "        <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" style=\"width:70px;\">\n";
+        echo "        <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" style=\"width:70px;\" alt=\"Espaço\" title=\"Espaço\">\n";
 
         include_once("login/src/Google_Client.php");
         include_once("login/src/contrib/Google_Oauth2Service.php");
@@ -894,7 +894,7 @@
         echo "<br />\n";
         echo "    <p class=\"fontComandosCentralizados\">\n";
         echo "      <a href=\"".$_SESSION['life_link_completo']."index.php?secao=17&sub=20&it=32\"><input type=\"button\" class=\"botao\" value=\"Sim\" alt=\"Realizar cadastro completo agora\" title=\"Realizar cadastro completo agora\" border=\"0\"></a>\n";
-        echo "      <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" border=\"0\" style=\"width:100px;height:1px;\">\n";
+        echo "      <img src=\"".$_SESSION['life_link_completo']."icones/espacador.png\" border=\"0\" style=\"width:100px;height:1px;\" title=\"Espaço\" alt=\"Espaço\">\n";
         echo "      <a href=\"".$_SESSION['life_link_completo']."\"><input type=\"button\" class=\"botao\" value=\"Mais tarde\" alt=\"Realizar cadastro completo mais tarde\" title=\"Realizar cadastro completo mais tarde\" border=\"0\"></a>\n";
         echo "    </p>\n";
       } elseif (isset($_SESSION['life_cadastro_proprio_usuario_erro'])) {
