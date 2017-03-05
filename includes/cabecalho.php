@@ -53,7 +53,7 @@ class Cabecalho
     public function imprimeCabecalhoXHTML()
     {
         $cab  = "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?". ">\n";
-        $cab .= "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"> \n";
+        $cab .= "<!DOCTYPE html>\n";
         $cab .= "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"cs\" lang=\"cs\">\n";
         $cab .= "<head>\n";
         $cab .= "<meta http-equiv=\"content-type\" content=\"text/html; charset=iso-8859-1\" />\n";
@@ -71,7 +71,7 @@ class Cabecalho
     public function imprimeCabecalhoHTML($indexar, $nm_site)
     {
       //echo "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?". ">\n";
-        echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n";
+        echo "<!DOCTYPE html>\n";
         echo "<html lang=\"pt-br\">\n";
         echo "<head>\n";
 //criar codigo para este site
@@ -83,7 +83,7 @@ class Cabecalho
         }
 
         foreach ($this->css as $c) {
-            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"". $c . "\"></link>\n";
+            echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"". $c . "\" />\n";
         }
         if ($indexar) {
             echo "<meta name=\"robots\" content=\"noindex\">\n";
