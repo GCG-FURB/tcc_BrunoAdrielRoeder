@@ -304,7 +304,7 @@ class ObjetoAprendizagem
             echo "      <td class=\"celConteudo\" colspan=\"3\">".$it['nm_objeto_aprendizagem']."</td>\n";
             echo "      <td class=\"celConteudo\" rowspan=\"3\">\n";
             echo "        <a href=\"#\" class=\"dcontexto\">\n";
-            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/informacoes.png\"border=\"0\">\n";
+            echo "          <img src=\"".$_SESSION['life_link_completo']."icones/informacoes.png\" border=\"0\">\n";
             echo "          <span class=\"fontdDetalhar\">\n";
             echo $this->detalharObjetoAprendizagem($it['cd_objeto_aprendizagem']);
             echo "        </span></a>\n";
