@@ -71,7 +71,7 @@ class Cabecalho
     public function imprimeCabecalhoHTML($indexar, $nm_site)
     {
       //echo "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?". ">\n";
-        echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n";
+        echo "<!DOCTYPE html>\n";
         echo "<html lang=\"pt-br\">\n";
         echo "<head>\n";
 //criar codigo para este site
