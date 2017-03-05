@@ -9,4 +9,4 @@ Após configurado o ambiente:
 
 ## InVersos de Teste ##
 
-Há um ambiente com as alterações do portal disponível em [http://inversos.brunoroeder.com.br/](http://inversos.brunoroeder.com.br/)
+Há um ambiente com as alterações do portal disponível em: [http://inversos.brunoroeder.com.br/](http://inversos.brunoroeder.com.br/)
