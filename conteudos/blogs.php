@@ -417,6 +417,8 @@ class Blog
                                             }
                                         }
                                     }
+                                    // Bruno Roeder acessibilidade: retirado o atributo imageanchor invalido ao w3c
+                                    $abreviado = str_replace('imageanchor="1"', '', $abreviado);
                                     echo "            <p class=\"fontResumoNoticia\">".utf8_decode(nl2br($abreviado))."</p>\n";
                                     if ($posicao_noticia == '2') {
                                         $aberto -= 1;
