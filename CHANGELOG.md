@@ -22,3 +22,12 @@ Versão com compatibilidade WCAG 2.0 nível A indice do AccessMonitor 10 para ho
 	* Alterações de Doctype para HTML 5, adequando-se as recomendações do validador HTML da W3C
 	* Validado toda estrutura de HTML, com o validador oficial W3C e ajustado para 100% de compatibilidade
 	* Alteração em algumas funções javascript para dispararem com eventos do teclado apenas se a tecla ENTER for pressionada
+
+1.1
+=============
+Versão com compatibilidade WCAG 2.0 nível AA indice do AccessMonitor 10 para home
+
+* Diretrizes
+	* Diretriz 1.4.3
+	* Diretriz 1.4.6
+	* Diretriz 1.4.8
