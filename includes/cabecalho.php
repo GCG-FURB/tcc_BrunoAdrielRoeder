@@ -76,7 +76,7 @@ class Cabecalho
         echo "<head>\n";
 //criar codigo para este site
 //      echo "<meta name=\"google-site-verification\" content=\"H_iXGE5AcCbOXpzRBc947-qVBbEQ_r4GrWIGEzJ9iF8\" />\n";
-        echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=iso-8859-1\">\n";
+        echo "<meta charset=\"windows-1252\">\n";
 
         foreach ($this->javaScript as $js) {
             include $js;

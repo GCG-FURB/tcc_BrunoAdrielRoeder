@@ -121,12 +121,13 @@ class HTML
         $oap = new ObjetoAprendizagemPesquisa();
         $oap->listarOpcoesPesquisaCapa($secao, $subsecao, $item);
         echo "    </div>\n";
-
+        if (!isset($_SESSION['life_tamanho_fonte'])) {
+            $_SESSION['life_tamanho_fonte'] = 4;
+        }
+          $tamanho = $_SESSION['life_tamanho_fonte'];
         echo "<script type=\"text/javascript\">\n";
         echo "mudaTamanho('$tamanho');\n";
         echo "</script>\n";
-
-
         echo "    </body>\n";
         echo "  </html>\n";
     }
