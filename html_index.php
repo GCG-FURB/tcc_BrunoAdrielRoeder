@@ -69,15 +69,15 @@
       echo "        </div>\n";
       echo "      </div>\n";
       if ($login->estaLogado()) {
-        echo "    <div id=\"fundo_tela\" class=\"divFundoCapa\" onClick=\"focoTelaPrincipal();\">\n";
+        echo "    <div id=\"fundo_tela\" class=\"divFundoCapa\">\n";
         echo "    </div>\n";
-        echo "    <div id=\"fundo_tela_dados_login\" class=\"divConteudoTopoTelaDadosLogin\" onClick=\"focoTelaPrincipal();\">\n";
+        echo "    <div id=\"fundo_tela_dados_login\" class=\"divConteudoTopoTelaDadosLogin\">\n";
         echo "      <div id=\"tela_dados_login\" class=\"divTelaDadosLogin\">\n";
         $menu->retornaMenuAdministrativoDadosPessoais('17');
         echo "      </div>\n";
         echo "    </div>\n";
         if ($secao == '4') {
-          echo "    <div id=\"fundo_tela\" class=\"divFundoCapaAtivo\" onClick=\"focoTelaPrincipal();\">\n";
+          echo "    <div id=\"fundo_tela\" class=\"divFundoCapaAtivo\">\n";
           echo "    </div>\n";
           echo "    <div id=\"tela_area_cadastro\" class=\"divTelaCadastroAtivo\">\n";
           require_once 'conteudos/pessoas.php';                                 $obj = new Pessoa();
@@ -87,13 +87,13 @@
       } else {
         if (isset($_SESSION['life_exibe_login'])) {
           unset($_SESSION['life_exibe_login']);
-          echo "    <div id=\"fundo_tela\" class=\"divFundoCapaAtivo\" onClick=\"focoTelaPrincipal();\">\n";
+          echo "    <div id=\"fundo_tela\" class=\"divFundoCapaAtivo\">\n";
           echo "    </div>\n";
           echo "    <div id=\"tela_login\" class=\"divTelaLoginAtivo\">\n";
           $login->controleExibicaoPublica($pagina, $atual);
           echo "    </div>\n";
         } else {
-          echo "    <div id=\"fundo_tela\" class=\"divFundoCapa\" onClick=\"focoTelaPrincipal();\">\n";
+          echo "    <div id=\"fundo_tela\" class=\"divFundoCapa\">\n";
           echo "    </div>\n";
           echo "    <div id=\"tela_login\" class=\"divTelaLogin\">\n";
           $login->controleExibicaoPublica($pagina, $atual);
