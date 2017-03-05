@@ -31,7 +31,7 @@ class HTML
         echo "      </div>\n";
 
         echo "    <div id=\"menu\">\n";
-        echo "      <input type=\"hidden\" name=\"digitou\" id=\"digitou\" value=\"0\"></input>\n";
+        echo "      <input type=\"hidden\" name=\"digitou\" id=\"digitou\" value=\"0\" />\n";
         echo "        <div  class=\"divTopo\" id=\"topoSiteControleFonte\">\n";
         echo "          <div  class=\"divConteudoTopo\">\n";
         echo "            <div  class=\"divConteudoEsquerdaTopo\">\n";
