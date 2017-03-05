@@ -61,7 +61,7 @@
       echo "  <div class=\"divLoginAcesso\">\n";
       echo "    <h2>Acesse com sua conta do Portal ".$nm_site."</h2>\n";
       echo "    <form class=\"fontConteudoLogin\" id=\"login\" name=\"logar\" method=\"post\" action=\"".$_SESSION['life_link_completo']."entre\">\n";
-      $util->campoHidden('eh_form', '1');
+      $util->campoHidden('eh_form', '1', 'eh_form-login-login');
       echo "      <p class=\"fontConteudoLogin\">\n";
       echo "        E-mail<br />\n";
       echo "        <input type=\"text\" maxlength=\"100\" name=\"usuario\" id=\"usuario\" class=\"fontConteudoCampoTextHint\" style=\"width:100%;\" />\n";

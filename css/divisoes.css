@@ -53,8 +53,7 @@ html, body {
 	width: 100%;
 	height: 80px;
 	margin-left: 0px;
-	background-image: url(../imagens/topo.png);
-	background-repeat: repeat-x;
+	background-color: #3d5297;
 	z-index: 0;
 }
 .divConteudoTopo {
@@ -117,10 +116,10 @@ html, body {
 	height: 30px;
 	margin-left: 0px;
 	margin-top: 0px;
-	background-image: url(../imagens/base_topo.png);
-	background-repeat: repeat-x;
+	background-color: #7989bc;
 	z-index: 0;
 }
+
 .divMenuAcessibilidade {
 	clear: both;
 	width: 980px;
@@ -132,6 +131,30 @@ html, body {
 	text-align: right;
 	padding-top: 3px;
 }
+
+
+/**************MENU INFERIOR*********************/
+.divBaseInferior {
+	width: 100%;
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #314994;
+	border-top: 1px solid #7989BC;
+	z-index: 0;
+}
+.divMenuInferior {
+	clear: both;
+	width: 980px;
+	left: 50%; 
+	margin-left: -490px;
+	position: absolute;
+	height: 30px;
+	z-index: 0;
+	text-align: right;
+	padding-top: 3px;
+}
+
 /**************LOGO******************************/
 .divLogo {
 	float: left;
