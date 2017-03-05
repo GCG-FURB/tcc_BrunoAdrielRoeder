@@ -274,6 +274,7 @@
                   $imagens = array();
                   while ($posicao_inicio_imagem > 0) {
                     $este_texto_novo = substr($texto_novo,0,$posicao_inicio_imagem);
+
                     $texto_ajustado = substr($texto_novo, ($posicao_inicio_imagem - (strlen($texto_novo))));
                     $posicao_fim_imagem = strpos($texto_ajustado, '/>');
                     $imagens[] = substr($texto_ajustado, 0, $posicao_fim_imagem+2);
@@ -329,6 +330,8 @@
                         }
                       }
                     }
+
+                    $nova_imagem = str_replace('<img', "<img alt=\"Imagem notícia: $entrada->title\" title=\"Imagem notícia: $entrada->title\"", $nova_imagem);
                     if ($nova_imagem != '') {
                       if ($posicao_noticia == '2') {
                         echo "              <div class=\"divFotoPrimeiraNoticiaMeioCapa\">".$nova_imagem."</div>\n";

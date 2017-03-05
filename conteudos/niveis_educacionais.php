@@ -323,7 +323,7 @@
         echo "          </span>\n";
         echo "        </a>\n";
       } else {
-        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\"border=\"0\">\n";
+        echo "          <img src=\"".$_SESSION['life_link_completo']."icones/help_vazio.png\"border=\"0\" alt=\"Sem Ajuda Disponível\" title=\"Sem Ajuda Disponível\">\n";
       }
     }
 //**************BANCO DE DADOS**************************************************
