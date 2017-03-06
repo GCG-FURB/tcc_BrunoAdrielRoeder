@@ -6403,7 +6403,7 @@ class Configuracao
         $lk_completo = $this->retornaLinkCompletoAplicacao();
         $logo = $this->retornaLogo();
         $descricao = $this->retornaDescricaoLogo();
-        echo "<a tabindex=\"0\" href=\"".$lk_completo."\"><img src=\"".$lk_completo.$logo."\" alt=\"".$descricao."\" title=\"".$descricao."\" border=\"0\" height=\"55\"></a>\n";
+        echo "<a tabindex=\"0\" accesskey=\"0\" href=\"".$lk_completo."\"><img src=\"".$lk_completo.$logo."\" alt=\"".$descricao."\" title=\"".$descricao."\" border=\"0\" height=\"55\"></a>\n";
     }
     
   
