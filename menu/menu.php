@@ -135,7 +135,7 @@ class Menu
         if ($secao == '4') {
             $saida .= "       <span class=\"fontLinkMenuSuperiorInativo\">Cadastre-se</span>\n";
         } else {
-            $saida .= "       <a href=\"#\" onClick=\"chamarCadastro(event);\" onKeyPress=\"chamarCadastro(event);\" class=\"fontLinkMenuSuperior\" tabindex=\"". ($this->totalItensMenuCount + 8) ."\">Cadastre-se</a>\n";
+            $saida .= "       <a href=\"#\" onClick=\"chamarCadastro(event);\" onKeyPress=\"chamarCadastro(event);\" accesskey=\"c\" class=\"fontLinkMenuSuperior\" tabindex=\"". ($this->totalItensMenuCount + 8) ."\">Cadastre-se</a>\n";
         }
         $saida .= "     </div>\n";
         $saida .= "     <div class=\"divDivisorBotaoMenuSuperiorDireita\"></div>\n";
@@ -143,7 +143,7 @@ class Menu
         if ($secao == '4') {
             $saida .= "       <span class=\"fontLinkMenuSuperiorInativo\">Entre</span>\n";
         } else {
-            $saida .= "       <a href=\"#\" onClick=\"chamarLogin(event);\" onKeyPress=\"chamarLogin(event);\" class=\"fontLinkMenuSuperior\" tabindex=\"". ($this->totalItensMenuCount + 7) ."\">Entre</a>\n";
+            $saida .= "       <a href=\"#\" onClick=\"chamarLogin(event);\" onKeyPress=\"chamarLogin(event);\" accesskey=\"l\" class=\"fontLinkMenuSuperior\" tabindex=\"". ($this->totalItensMenuCount + 7) ."\">Entre</a>\n";
         }
         $saida .= "     </div>\n";
         $saida .= "     <div class=\"divDivisorBotaoMenuSuperiorDireita\"></div>\n";
@@ -334,9 +334,9 @@ class Menu
 
     public function retornaMenuAcessibilidade($pagina, $atual)
     {
-        echo "      <a href=\"#content\" tabindex=\"1\"><img src=\"".$_SESSION['life_link_completo']."icones/ir_conteudo.png\" alt=\"Ir ao Conteúdo\" title=\"Ir ao Conteúdo\" border=\"0\"></a>\n";
-        echo "      <a href=\"#menu\" tabindex=\"2\"><img src=\"".$_SESSION['life_link_completo']."icones/ir_menu.png\" alt=\"Ir ao Menu\" title=\"Ir ao Menu\" border=\"0\"></a>\n";
-        echo "      <a href=\"".$_SESSION['life_link_completo']."como-usar\" tabindex=\"3\"><img src=\"".$_SESSION['life_link_completo']."icones/icone_acessibilidade.png\" alt=\"Como Usar\" title=\"Como Usar\" border=\"0\"></a>\n";
+        echo "      <a href=\"#content\" tabindex=\"1\" accesskey=\"1\"><img src=\"".$_SESSION['life_link_completo']."icones/ir_conteudo.png\" alt=\"Ir ao Conteúdo\" title=\"Ir ao Conteúdo\" border=\"0\"></a>\n";
+        echo "      <a href=\"#menu\" tabindex=\"2\" accesskey=\"2\"><img src=\"".$_SESSION['life_link_completo']."icones/ir_menu.png\" alt=\"Ir ao Menu\" title=\"Ir ao Menu\" border=\"0\"></a>\n";
+        echo "      <a href=\"".$_SESSION['life_link_completo']."como-usar\" tabindex=\"3\" accesskey=\"3\"><img src=\"".$_SESSION['life_link_completo']."icones/icone_acessibilidade.png\" alt=\"Como Usar\" title=\"Como Usar\" border=\"0\"></a>\n";
         echo "      <input type=\"hidden\" name=\"tamanho_fonte\" id=\"tamanho_fonte\"/>\n";
         echo "      <a href=\"javascript:;\" onClick=\"mudaTamanho('d');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == 'click'){mudaTamanho('d');}\" tabindex=\"4\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_diminuir.png\" alt=\"Diminuir tamanho da letra\" title=\"Diminuir tamanho da letra\" border=\"0\"></a>\n";
         echo "      <a href=\"javascript:;\" onClick=\"mudaTamanho('p');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == 'click'){mudaTamanho('p');}\" tabindex=\"5\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_normal.png\" alt=\"Deixar a letra no tamanho padrão\" title=\"Deixar a letra no tamanho padrão\" border=\"0\"></a>\n";
@@ -353,7 +353,7 @@ class Menu
             echo "      <a href=\"".$_SESSION['life_link_completo']."meus-objetos-aprendizagem\"><img src=\"".$_SESSION['life_link_completo']."icones/meus_objetos_aprendizagem.png\" alt=\"Meus Objetos de Aprendizagem\" title=\"Meus Objetos de Aprendizagem\" border=\"0\"></a>\n";
         }
 
-        echo "<a href=\"#\" onClick=\"chamarPesquisa(event);\" onKeyPress=\"chamarPesquisa(event);\" tabindex=\"". ($this->totalItensMenuCount + 9) ."\"><img src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" border=\"0\"></a>\n";
+        echo "<a href=\"#\" onClick=\"chamarPesquisa(event);\" onKeyPress=\"chamarPesquisa(event);\" accesskey=\"p\" tabindex=\"". ($this->totalItensMenuCount + 9) ."\"><img src=\"".$_SESSION['life_link_completo']."icones/pesquisar_capa.png\" alt=\"Pesquisar\" title=\"Pesquisar\" border=\"0\"></a>\n";
     }
 
     public function retornaDadosMenu($secao, $subsecao, $item)
