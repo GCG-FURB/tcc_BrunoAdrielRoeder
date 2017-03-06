@@ -248,8 +248,11 @@ html, body {
 	background-color: #ECECEC;
 }
 .divCentroMeioCorpoSite {
-	display: block;
-	margin: auto auto auto 457px;
+    clear: both;
+    left: 50%;
+    margin-left: -498px;
+    position: relative;
+    width: 980px;
 }
 .divLado01MeioCorpoSite {
 	float: left;
@@ -259,10 +262,9 @@ html, body {
 	width: 480px;
 }
 .divLado02MeioCorpoSite {
-	float: right;
+	float: left;
 	height: auto;
-	margin-right: 457px;
-	padding-right: 10px;
+	margin-left: 10px;
 	width: 480px;
 }
 .divUmElementoCapaMeio {
