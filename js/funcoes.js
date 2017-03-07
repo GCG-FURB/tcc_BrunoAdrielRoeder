@@ -61,7 +61,8 @@ function alterarBorda(e,f) {
     }
   }
   function ocultarPesquisa(event) {
-    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+    // 13 = enter, 27 = esc
+    if (event.keyCode == 13 || event.which == 13 || event.keyCode == 27 || event.which == 27 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'none';
       document.getElementById('tela_pesquisa').style.display = 'none';
     }
@@ -75,7 +76,8 @@ function alterarBorda(e,f) {
     }
   }
   function ocultarLogin(event) {
-    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+    // 13 = enter, 27 = esc
+    if (event.keyCode == 13 || event.which == 13 || event.keyCode == 27 || event.which == 27 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'none';
       document.getElementById('tela_login').style.display = 'none';
     }
@@ -89,7 +91,8 @@ function alterarBorda(e,f) {
     }
   }
   function ocultarCadastro(event) {
-    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+    // 13 = enter, 27 = esc
+    if (event.keyCode == 13 || event.which == 13 || event.keyCode == 27 || event.which == 27 || event.type == "click"){
       document.getElementById('fundo_tela').style.display = 'none';
       document.getElementById('tela_cadastro').style.display = 'none';
     }

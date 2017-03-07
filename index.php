@@ -105,11 +105,6 @@ if (!$login->estaLogado()) {
 
   require_once "html_index.php";
 $html = new HTML();
-  $html->retornaControleConteudo($secao, $subsecao, $item, $permissao, $pagina, $atual, $cd_menu);
+$html->retornaControleConteudo($secao, $subsecao, $item, $permissao, $pagina, $atual, $cd_menu);
 
-if (!isset($_SESSION['life_tamanho_fonte'])) {
-    $_SESSION['life_tamanho_fonte'] = 4;
-}
-  $tamanho = $_SESSION['life_tamanho_fonte'];
-
-  mysql_close();
+mysql_close();
