@@ -124,9 +124,19 @@ class HTML
         if (!isset($_SESSION['life_tamanho_fonte'])) {
             $_SESSION['life_tamanho_fonte'] = 4;
         }
-          $tamanho = $_SESSION['life_tamanho_fonte'];
+        $tamanho = $_SESSION['life_tamanho_fonte'];
         echo "<script type=\"text/javascript\">\n";
         echo "mudaTamanho('$tamanho');\n";
+        // Bruno Roeder acessibilidade: ao pressionar a tecla esc, fecha as caixas de dialogo do portal
+        echo "document.onkeydown = function(evt) { \n";
+        echo "  evt = evt || window.event; \n";
+        echo "   if (evt.keyCode == 27) { \n";
+        echo "      ocultarPesquisa(evt); \n";
+        echo "      ocultarLogin(evt); \n";
+        echo "      ocultarCadastro(evt); \n";
+        echo "      ocultarCadastro(evt); \n";
+        echo "  }\n";
+        echo "}; \n";
         echo "</script>\n";
         echo "    </body>\n";
         echo "  </html>\n";
