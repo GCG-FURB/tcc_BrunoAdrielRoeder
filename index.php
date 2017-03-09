@@ -90,14 +90,20 @@ if ($item != '0') {
   $cabecalho->insereArquivoCss($_SESSION['life_link_completo']."css/divisoes.css");
   $cabecalho->insereArquivoCss($_SESSION['life_link_completo']."css/fontes.css");
   $cabecalho->insereArquivoCss($_SESSION['life_link_completo']."css/tabelas.css");
+  $cabecalho->insereArquivoCss($_SESSION['life_link_completo']."css/style-preto-branco.css");
 
 if ($javascript != '') {
     //inclusao do arquivo javascript
     $cabecalho->insereArquivoJavaScript($javascript);
 }
+
 if (!$login->estaLogado()) {
     $cabecalho->insereArquivoJavaScript("js/login_face.js");
 }
+
+// Bruno Roeder acessibilidade: inclusao de js de acessibilidade para troca de contraste
+$cabecalho->insereArquivoJavaScript('js/styleswitcher.js');
+
   //ordem de impressao do cabecalho
   $cabecalho->imprimeCabecalhoHTML($no_index, $nm_site);
 

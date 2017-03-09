@@ -78,8 +78,15 @@ class Cabecalho
 //      echo "<meta name=\"google-site-verification\" content=\"H_iXGE5AcCbOXpzRBc947-qVBbEQ_r4GrWIGEzJ9iF8\" />\n";
         echo "<meta charset=\"windows-1252\">\n";
 
+        echo "<script type=\"text/javascript\">";
+        sajax_show_javascript();
+        echo "</script>";
+
+        echo "<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-2.0.3.min.js\"></script>";
+        echo "<script type=\"text/javascript\" src=\"http://connect.facebook.net/en_US/all.js\"></script>";
+
         foreach ($this->javaScript as $js) {
-            include $js;
+            echo "<script src=\"". $js ."\" type=\"text/javascript\"></script>\n";
         }
 
         foreach ($this->css as $c) {

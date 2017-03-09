@@ -1,9 +1,3 @@
-<script>
-<!--
-<?php
-  sajax_show_javascript();
-?>
-
 function alterarBorda(e,f) {
 	if (f==1) {
 		e.style.borderTop = '#041ba6 1px solid';
@@ -323,6 +317,3 @@ function mudaTamanho(acao){
   document.getElementById('tamanho_fonte').value = tamanho;
   x_mudarTamanhoFonte(tamanho, mudandoTamanhoFonte);
 }
-
--->
-</script>
