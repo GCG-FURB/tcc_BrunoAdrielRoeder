@@ -6,7 +6,7 @@ Versão sem compatibilidade com WCAG 2.0
 =============
 Versão com compatibilidade WCAG 2.0 nível A indice do AccessMonitor 10 para home
 
-Diretrizes atendidas
+* Diretrizes atendidas
 	* Diretriz 1.1.1
 	* Diretriz 2.1
 	* Diretriz 2.1.1
@@ -16,7 +16,7 @@ Diretrizes atendidas
 	* Diretriz 4.1.1
 	* Diretriz 4.1.2
 	
-Melhorias
+* Melhorias
 	* Movido barra de acessibilidade para o topo, atendendo a recomendação da WCAG 2.0 e mantendo um nível de navegação lógico via teclado
 	* Adicionado botão para pular diretamente para o conteúdo do site ou pular para o menu
 	* Alterações de Doctype para HTML 5, adequando-se as recomendações do validador HTML da W3C
@@ -27,7 +27,7 @@ Melhorias
 =============
 Versão com compatibilidade WCAG 2.0 nível AA indice do AccessMonitor 10 para home
 
-Diretrizes atendidas
+* Diretrizes atendidas
 	* Diretriz 1.4.3
 	* Diretriz 1.4.6
 	* Diretriz 1.4.8
