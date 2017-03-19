@@ -1,4 +1,4 @@
-1.0
+[1.0] - 2017-03-04
 =============
 Versão sem compatibilidade com WCAG 2.0
 
