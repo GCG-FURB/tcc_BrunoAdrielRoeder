@@ -328,19 +328,23 @@ function mudarEstilo(event){
     var atual = document.getElementById("link-pretoebranco").getAttribute("href");
     var isPb = readCookie('contrastChanged');
 
-    if(atual === "" && isPb == 'true'){
+    if(isPb == null){
+      document.cookie = "contrastChanged=false";
+    }
+
+    if(atual === '' && isPb == 'true'){
       document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
       document.cookie = "contrastChanged=true";
       return;
     }
 
-    if(atual === "" && isPb == 'false' && event != undefined)
+    if(atual === '' && isPb == 'false' && event != undefined)
       {
         document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
         document.cookie = "contrastChanged=true";
       }
 
-      if(atual !== "" && isPb == 'true' && event != undefined){
+      if(atual !== '' && isPb == 'true' && event != undefined){
       document.getElementById("link-pretoebranco").setAttribute("href", "");
       document.cookie = "contrastChanged=false";
     }
