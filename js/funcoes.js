@@ -338,15 +338,17 @@ function mudarEstilo(event){
       return;
     }
 
-    if(atual === '' && isPb == 'false' && event != undefined)
-      {
-        document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
-        document.cookie = "contrastChanged=true";
-      }
+    if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+      if(atual === '' && isPb == 'false' && event != undefined)
+        {
+          document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
+          document.cookie = "contrastChanged=true";
+        }
 
-      if(atual !== '' && isPb == 'true' && event != undefined){
-      document.getElementById("link-pretoebranco").setAttribute("href", "");
-      document.cookie = "contrastChanged=false";
+        if(atual !== '' && isPb == 'true' && event != undefined){
+        document.getElementById("link-pretoebranco").setAttribute("href", "");
+        document.cookie = "contrastChanged=false";
+      }
     }
 
 }
