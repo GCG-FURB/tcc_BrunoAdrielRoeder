@@ -324,5 +324,16 @@ function mudaTamanho(acao){
   x_mudarTamanhoFonte(tamanho, mudandoTamanhoFonte);
 }
 
+function mudarEstilo(event){
+  if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+    var atual = document.getElementById("link-pretoebranco").getAttribute("href");
+    if(atual === ""){
+      document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
+    }else{
+      document.getElementById("link-pretoebranco").setAttribute("href", "");
+    }
+  }
+}
+
 -->
 </script>
