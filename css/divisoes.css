@@ -90,7 +90,7 @@ html, body {
 	float: left;
 	width: 2px;
 	height: 80px;
-	background-image: url(../imagens/diviso_botao_topo.png);
+	background-color: #7989BC;
 	background-repeat: no-repeat;
 	padding-top: 0px;
 }
@@ -106,7 +106,7 @@ html, body {
 	float: right;
 	width: 2px;
 	height: 80px;
-	background-image: url(../imagens/diviso_botao_topo.png);
+	background-color: #7989BC;
 	background-repeat: no-repeat;
 	padding-top: 0px;
 }

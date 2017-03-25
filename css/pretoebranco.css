@@ -1,0 +1,409 @@
+.divTopo {
+	width: 100%;
+	height: 80px;
+	margin-left: 0px;
+	background-color: #000;
+	z-index: 0;
+}
+.divBaseTopo {
+    background-color: #454545;
+    height: 25px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.divBaseInferior {
+    background-color: #454545;
+    border-top: 1px solid #FFF;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.divDivisorBotaoMenuSuperiorEsquerda {
+	float: left;
+	width: 2px;
+	height: 80px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	padding-top: 0px;
+}
+.divDivisorBotaoMenuSuperiorDireita {
+	float: right;
+	width: 2px;
+	height: 80px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	padding-top: 0px;
+}
+.fontTituloItemTopoCapa {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    text-align: center;
+}
+.fontChamadaItemTopoCapa {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.divUmElementoCapaTopo {
+	float: left;
+	width: 19%;
+	min-height: 240px;
+	height: auto;
+	margin-left: 4px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-color: #000;
+	border-style: double;
+	border-width: 1px;
+}
+
+.divUmElementoCapaMeio {
+	float: left;
+	width: 31%;
+	min-height: 200px;
+	height: auto;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	border-color: #000;
+	border-style: double;
+	border-width: 1px;
+}
+
+.divUmElementoPesquisa {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-color: #000;
+	border-style: double;
+	border-width: 1px;
+	text-align: left;
+}
+
+.fontTituloItemMeioCapa {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.fontChamadaItemMeioCapa {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.fontResumoNoticia {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.divAreaRodape {
+    background-color: #000;
+    height: auto;
+    margin-left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.divAreaLogin {
+    background-color: #CCC;
+    clear: both;
+    height: 520px;
+    margin: 20px 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 820px;
+}
+
+
+.divLoginCadastro {
+    background-color: #FFF;
+    float: left;
+    height: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 345px;
+}
+
+.divLoginAcesso {
+    background-color: #FFF;
+    float: left;
+    height: 240px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 345px;
+}
+
+
+.divLoginRedesSociais {
+    background-color: #FFF;
+    float: right;
+    height: 378px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 360px;
+}
+
+
+.divMensagemCadastroRedes {
+    background-color: #FFF;
+    float: right;
+    height: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 305px;
+}
+
+.divCadastroLateralPessoa {
+    background-color: #FFF;
+    float: left;
+    height: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 405px;
+}
+
+.divAreaCadastro {
+    background-color: #CCC;
+    border-color: #CCC;
+    border-style: solid;
+    border-width: 1px;
+    clear: both;
+    height: 530px;
+    margin: 20px 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 820px;
+}
+
+.divPesquisaCapa {
+    background-color: #CCC;
+    bottom: 0;
+    clear: both;
+    display: none;
+    height: 250px;
+    left: 0;
+    margin: auto;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 980px;
+    z-index: 1;
+}
+
+.divFundoCapa {
+    background-color: #000;
+    bottom: 0;
+    clear: both;
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.fontLink {
+    color: #000;
+    text-decoration: none;
+}
+
+.fontConteudoObjetosAprendizagem {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.fontConteudoDuploObjetosAprendizagem {
+    color: #000;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-align: justify;
+    width: 47%;
+}
+
+h1 {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.fontDownloadObjetosAprendizagem {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+h2 {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-bottom: 7px;
+    padding-top: 4px;
+    text-align: left;
+}
+
+.fontConteudoLogin {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.botao {
+    background-color: #eeeef0;
+    border-color: #000;
+    border-radius: 10px 5px;
+    border-style: double;
+    border-width: 2px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+}
+
+.fontLinkLogin {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+
+.fontConteudoCampoTextHint {
+    background-color: White;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.fontConteudoCampoTextHintFiltroCapa {
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.fontConteudoCampoSeletorHintFiltro {
+    background-color: White;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 1px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.fontLinkItemPesquisado {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: lighter;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.fontLinkItemPesquisado {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: lighter;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.fontConteudoObjetosAprendizagemRetornoPesquisa {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 19px;
+    margin-left: -10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.fontConteudoCentralizado {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+}

@@ -85,6 +85,8 @@ class Cabecalho
         foreach ($this->css as $c) {
             echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"". $c . "\" />\n";
         }
+
+        echo "<link rel=\"stylesheet\" href=\"\" data-href=\"" . $_SESSION['life_link_completo'] . "css/pretoebranco.css\" id=\"link-pretoebranco\" />";
         if ($indexar) {
             echo "<meta name=\"robots\" content=\"noindex\">\n";
         }

@@ -127,6 +127,7 @@ class HTML
         $tamanho = $_SESSION['life_tamanho_fonte'];
         echo "<script type=\"text/javascript\">\n";
         echo "mudaTamanho('$tamanho');\n";
+        echo "mudarEstilo(window.event);\n";
         // Bruno Roeder acessibilidade: ao pressionar a tecla esc, fecha as caixas de dialogo do portal
         echo "document.onkeydown = function(evt) { \n";
         echo "  evt = evt || window.event; \n";
