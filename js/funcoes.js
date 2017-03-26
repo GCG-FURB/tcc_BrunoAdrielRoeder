@@ -253,10 +253,11 @@ function ajustarStatus(posicao) {
 
 function mudandoTamanhoFonte() {
 }
+
 function mudaTamanho(acao){
   var tamanho = parseInt(document.getElementById('tamanho_fonte').value);
-
-  var elementoTopoSiteControleFonte = document.getElementById("topoSiteControleFonte");            var atualTopoSiteControleFonte = elementoTopoSiteControleFonte.style.fontSize;
+  var elementoTopoSiteControleFonte = document.getElementById("topoSiteControleFonte");            
+  var atualTopoSiteControleFonte = elementoTopoSiteControleFonte.style.fontSize;
 
   if (acao == 'a') {
     atualTopoSiteControleFonte = parseInt(atualTopoSiteControleFonte)+2+'px';
@@ -283,38 +284,54 @@ function mudaTamanho(acao){
   var elemento = document.getElementsByTagName('p');
   var tamanhos = new Array('6px','8px','10px','11px','12px','13px','14px','16px','18px');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('td');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('input');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('select');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('textarea');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('h1');
   var tamanhos = new Array('10px','12px','14px','15px','16px','17px','18px','20px','22px');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('h2');
   var tamanhos = new Array('8px','10px','12px','13px','14px','15px','16px','18px','20px');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   var elemento = document.getElementsByTagName('h3');
   var tamanhos = new Array('6px','8px','10px','11px','12px','13px','14px','16px','18px');
   var este_tamanho = tamanhos[tamanho];
-  for (i=0; i<elemento.length; i++) {    elemento[i].style.fontSize = este_tamanho;     }
+  for (i=0; i<elemento.length; i++) {
+    elemento[i].style.fontSize = este_tamanho;
+  }
 
   if (ajustar) {
     elementoTopoSiteControleFonte.style.fontSize = atualTopoSiteControleFonte;
