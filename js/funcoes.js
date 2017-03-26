@@ -342,13 +342,14 @@ function mudaTamanho(acao){
 }
 
 function mudarEstilo(event){
+    // verifica se atualmente usa estilo com contraste
     var atual = document.getElementById("link-pretoebranco").getAttribute("href");
     var isPb = readCookie('contrastChanged');
-
+    // inicializa cookie para manter o contraste na navegacao
     if(isPb == null){
       document.cookie = "contrastChanged=false";
     }
-
+    // nao usa e o cookie eh true, entao deve alterar o contraste
     if(atual === '' && isPb == 'true'){
       document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
       document.cookie = "contrastChanged=true";
@@ -356,18 +357,18 @@ function mudarEstilo(event){
     }
 
     if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
+      // alterar o contraste
       if(atual === '' && isPb == 'false' && event != undefined)
         {
           document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
           document.cookie = "contrastChanged=true";
         }
-
+        // retomar contraste original
         if(atual !== '' && isPb == 'true' && event != undefined){
         document.getElementById("link-pretoebranco").setAttribute("href", "");
         document.cookie = "contrastChanged=false";
       }
     }
-
 }
 
 function readCookie(name) {
