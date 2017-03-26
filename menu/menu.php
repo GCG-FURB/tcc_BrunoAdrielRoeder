@@ -341,7 +341,7 @@ class Menu
         echo "      <a href=\"javascript:;\" onClick=\"mudaTamanho('d');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == 'click'){mudaTamanho('d');}\" tabindex=\"4\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_diminuir.png\" alt=\"Diminuir tamanho da letra\" title=\"Diminuir tamanho da letra\" border=\"0\"></a>\n";
         echo "      <a href=\"javascript:;\" onClick=\"mudaTamanho('p');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == 'click'){mudaTamanho('p');}\" tabindex=\"5\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_normal.png\" alt=\"Deixar a letra no tamanho padrão\" title=\"Deixar a letra no tamanho padrão\" border=\"0\"></a>\n";
         echo "      <a href=\"javascript:;\" onClick=\"mudaTamanho('a');\" onKeyPress=\"if (event.keyCode == 13 || event.which == 13 || event.type == 'click'){mudaTamanho('a');}\" tabindex=\"6\"><img src=\"".$_SESSION['life_link_completo']."icones/fonte_aumentar.png\" alt=\"Aumentar tamanho da letra\" title=\"Aumentar tamanho da letra\" border=\"0\"></a>\n";
-        echo "      <a href=\"javascript:;\"  onClick=\"mudarEstilo(event);\" onKeyPress=\"mudarEstilo(event);\" id=\"mudaEstilo\" tabindex=\"7\"><img src=\"".$_SESSION['life_link_completo']."icones/mudar_constraste.png\" alt=\"Mudar Contraste\" title=\"Mudar Contraste\" border=\"0\"></a>\n";
+        echo "      <a href=\"javascript:;\"  onClick=\"mudarEstilo(event);\" onKeyPress=\"mudarEstilo(event);\" id=\"mudaEstilo\" tabindex=\"7\"><img src=\"".$_SESSION['life_link_completo']."icones/mudar_contraste.png\" alt=\"Mudar Contraste\" title=\"Mudar Contraste\" border=\"0\"></a>\n";
     }
 
     // Bruno Roeder: barra de menus que ficara abaixo da principal
