@@ -1,0 +1,13 @@
+body{font-size:12px;}
+
+#menu{padding-bottom:10px;
+margin-bottom:10px;
+border-bottom:1px dotted #ccc; color:#999;}
+
+#menu a{color:#000;}
+#menu a:hover{cursor:pointer; color:#000;}
+#container a{font-size:14px; font-weight:700;}
+
+span{color:#000099; font-size:17px; font-family:Georgia, "Times New Roman", Times, serif;}
+.title{font-size:11px; color:#666;}
+p{font-size:15px;}
