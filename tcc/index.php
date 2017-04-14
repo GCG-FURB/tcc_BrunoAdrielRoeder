@@ -13,13 +13,13 @@
 <body>
     <script type="text/javascript">
         $(document).ready(function(){
-            var section = new Array('.text', 'p', 'cite'); 
+            var section = new Array('.text', 'p', 'cite');
             section = section.join(',');
 
                 // Reset Font Size
                 var originalFontSize = $(section).css('font-size');
                 $(".resetFont").click(function(){
-                    $(section).css('font-size', originalFontSize); 
+                    $(section).css('font-size', originalFontSize);
                 });
 
                 // Increase Font Size
@@ -62,13 +62,13 @@
     <h1>Introdu&ccedil;&atilde;o</h1>
     <h2>Apresenta&ccedil;&atilde;o</h2>
     <div class="text">
-        <p>Esta p&aacute;gina apresenta o Trabalho de Conclus&atilde;o de Curso (TCC) de Bruno Roeder e seu orientador, o professor Dalton Reis. Primeiramente quero agradecer a voc&ecirc; que est&aacute; lendo esta p&aacute;gina e contribuindo para a realiza&ccedil;&atilde;o e conclus&atilde;o de menu tcc. Quero agradecer ao professor Rodrigo M. Fran&ccedil;a pela oportunidade e, em v&aacute;rios projetos, por sempre estar buscando algo a mais para a educa&ccedil;&atilde;o especial e inclus&atilde;o.</p>
+        <p>Esta p&aacute;gina apresenta o Trabalho de Conclus&atilde;o de Curso (TCC) de Bruno Roeder e seu orientador, o professor Dalton Reis. Primeiramente quero agradecer a voc&ecirc; que est&aacute; lendo esta p&aacute;gina e contribuindo para a realiza&ccedil;&atilde;o e conclus&atilde;o de menu TCC. Quero agradecer ao professor Rodrigo M. Fran&ccedil;a pela oportunidade e, em v&aacute;rios projetos, por sempre estar buscando algo a mais para a educa&ccedil;&atilde;o especial e inclus&atilde;o.</p>
     </div>
     <h2>Sobre o TCC</h2>
     <div class="text">
         <p>O TCC ser&aacute; apresentado no primeiro semestre de 2017 e tem como t&iacute;tulo <strong>"ADAPTA&Ccedil;&Atilde;O DO PORTAL INVERSOS &Agrave;S DIRETRIZES DE ACESSIBILIDADE
-            WCAG 2.0"</strong>. Este TCC tem como objetivo adaptar um portal, o InVersos; que &eacute; um portal desenvolvido pelo grupo TecEdu-FURB, que visa tecnologias digitais na educa&ccedil;&atilde;o, cujo objetivo ser&aacute; agregar materiais digitais para os cursos de licenciatura, &agrave;s diretrizes de acessibilidade para websites chamdas WCAG 2.0. </p>
-            <p>Estas diretrizes WCAG, especificam quais elementos fazem parte de um website acessivel e define normas e regras para a acessibilidade digital. Durante a produ&ccedil;&atilde;o deste TCC, o portal InVersos recebeu as adapta&ccedil;&otilde;es indicadas nestas regras e passou em testes de acessibilidade autom&aacute;ticos, queremos agora validar com usu&aacute;rios reais.</p>
+            WCAG 2.0"</strong>. Este TCC tem como objetivo adaptar um portal, o InVersos; que &eacute; um portal desenvolvido pelo grupo TecEdu-FURB, que visa tecnologias digitais na educa&ccedil;&atilde;o, cujo objetivo ser&aacute; agregar materiais digitais para os cursos de licenciatura, &agrave;s diretrizes de acessibilidade para websites chamadas WCAG 2.0. </p>
+            <p>Estas diretrizes WCAG, especificam quais elementos fazem parte de um website acessivel e definem normas e regras para a acessibilidade digital. Durante a produ&ccedil;&atilde;o deste TCC, o portal InVersos recebeu as adapta&ccedil;&otilde;es indicadas nestas regras e passou em testes de acessibilidade autom&aacute;ticos. Agora queremos validar com usu&aacute;rios reais.</p>
         </div>
 
         <h2>Motiva&ccedil;&atilde;o</h2>
@@ -86,7 +86,7 @@
 
         <h2>Desenvolvimento</h2>
         <div class="text">
-        <p>Por desconhecer ou por desacreditar a import&acirc;ncia da acessibilidade, muito do desenvolvimento de websites e aplica&ccedil;&otilde;es Web s&atilde;o feitos de maneira errônea, sem utilizar uma recomenda&ccedil;&atilde;o padr&atilde;o (HENRY, 2005). Desenvolver conte&uacute;do Web com acessibilidade &eacute; um dever de todos os desenvolvedores e um direito de todo cidad&atilde;o, portador ou n&atilde;o de necessidades especiais (CUSIN, 2009). A acessibilidade &eacute; pass&iacute;vel de obriga&ccedil;&atilde;o legislativa (KRUG, 2008) e possui custo m&iacute;nimo (DIAS, 2007). Al&eacute;m de um requerir um conhecimento m&iacute;nimo para ser implementada a n&iacute;vel de desenvolvimento.</p>
+        <p>Por desconhecer ou por desacreditar a import&acirc;ncia da acessibilidade, muito do desenvolvimento de websites e aplica&ccedil;&otilde;es Web s&atilde;o feitos de maneira err&ocirc;nea, sem utilizar uma recomenda&ccedil;&atilde;o padr&atilde;o (HENRY, 2005). Desenvolver conte&uacute;do Web com acessibilidade &eacute; um dever de todos os desenvolvedores e um direito de todo cidad&atilde;o, portador ou n&atilde;o de necessidades especiais (CUSIN, 2009). A acessibilidade &eacute; pass&iacute;vel de obriga&ccedil;&atilde;o legislativa (KRUG, 2008) e possui custo m&iacute;nimo (DIAS, 2007). Al&eacute;m de um requerir um conhecimento m&iacute;nimo para ser implementada a n&iacute;vel de desenvolvimento.</p>
         </div>
 
 
@@ -118,6 +118,6 @@
         </ol>
     </div>
 </body>
-</html> 
+</html>
 
 
