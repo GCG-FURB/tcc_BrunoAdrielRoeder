@@ -62,7 +62,7 @@
     <h1>Introdu&ccedil;&atilde;o</h1>
     <h2>Apresenta&ccedil;&atilde;o</h2>
     <div class="text">
-        <p>Esta p&aacute;gina apresenta o Trabalho de Conclus&atilde;o de Curso (TCC) de Bruno Roeder e seu orientador, o professor Dalton Reis. Primeiramente quero agradecer a voc&ecirc; que est&aacute; lendo esta p&aacute;gina e contribuindo para a realiza&ccedil;&atilde;o e conclus&atilde;o de menu TCC. Quero agradecer ao professor Rodrigo M. Fran&ccedil;a pela oportunidade e, em v&aacute;rios projetos, por sempre estar buscando algo a mais para a educa&ccedil;&atilde;o especial e inclus&atilde;o.</p>
+        <p>Esta p&aacute;gina apresenta o Trabalho de Conclus&atilde;o de Curso (TCC) de Bruno Roeder e seu orientador, o professor Dalton Reis. Primeiramente quero agradecer a voc&ecirc; que est&aacute; lendo esta p&aacute;gina e contribuindo para a realiza&ccedil;&atilde;o e conclus&atilde;o de menu TCC e agradecer ao professor Maur&iacute;cio Capobianco Lopes pela oportunidade.</p>
     </div>
     <h2>Sobre o TCC</h2>
     <div class="text">
