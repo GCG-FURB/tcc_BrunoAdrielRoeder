@@ -67,7 +67,7 @@
     <h2>Sobre o TCC</h2>
     <div class="text">
         <p>O TCC ser&aacute; apresentado no primeiro semestre de 2017 e tem como t&iacute;tulo <strong>"ADAPTA&Ccedil;&Atilde;O DO PORTAL INVERSOS &Agrave;S DIRETRIZES DE ACESSIBILIDADE
-            WCAG 2.0"</strong>. Este TCC tem como objetivo adaptar um portal, o InVersos; que &eacute; um portal desenvolvido pelo grupo TecEdu-FURB, que visa tecnologias digitais na educa&ccedil;&atilde;o, cujo objetivo ser&aacute; agregar materiais digitais para os cursos de licenciatura, &agrave;s diretrizes de acessibilidade para websites chamadas WCAG 2.0. </p>
+            WCAG 2.0"</strong>. Este TCC tem como objetivo adaptar um portal, o InVersos; que &eacute; um portal desenvolvido pelo grupo TecEdu-FURB, que visa tecnologias digitais na educa&ccedil;&atilde;o, cujo objetivo ser&aacute; agregar materiais digitais para os cursos de licenciatura, &agrave;s diretrizes de acessibilidade para websites chamadas Diretrizes de Acessibilidade para o Conte&uacute;do da Web (WCAG 2.0). </p>
             <p>Estas diretrizes WCAG, especificam quais elementos fazem parte de um website acessivel e definem normas e regras para a acessibilidade digital. Durante a produ&ccedil;&atilde;o deste TCC, o portal InVersos recebeu as adapta&ccedil;&otilde;es indicadas nestas regras e passou em testes de acessibilidade autom&aacute;ticos. Agora queremos validar com usu&aacute;rios reais.</p>
         </div>
 
