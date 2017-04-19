@@ -230,6 +230,10 @@
     z-index: 1;
 }
 
+.linhaOn {
+    background-color: #ccc;
+}
+
 .divPesquisaCapa {
     background-color: #CCC;
     bottom: 0;
@@ -431,4 +435,71 @@ h2 {
     margin-bottom: 2px;
     margin-top: 2px;
     text-align: center;
+}
+
+.fontConteudoCampoTextHintObrigatorio {
+    background-color: #fff;
+    border-color: #cecece;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.fontConteudoCampoTextoHintObrigatorio {
+    background-color: #fff;
+    border-color: #cecece;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.celConteudoChamada {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 25px;
+    padding-left: 5px;
+    vertical-align: middle;
+    width: 180px;
+}
+
+.celConteudo {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 25px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.celConteudoDestaque {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bolder;
+    height: 25px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.fontLinkMenuDadosLogin {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+
+.fontNomeUsuarioLogadoEvidencia {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-top: 7px;
+    padding-left: 10px;
+    text-align: left;
 }
