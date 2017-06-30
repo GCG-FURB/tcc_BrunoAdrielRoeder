@@ -350,7 +350,7 @@ function mudarEstilo(event){
       document.cookie = "contrastChanged=false";
     }
     // nao usa e o cookie eh true, entao deve alterar o contraste
-    if(atual === '' && isPb == 'true'){
+    if(atual === 'empty.css' && isPb == 'true'){
       document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
       document.cookie = "contrastChanged=true";
       return;
@@ -358,14 +358,14 @@ function mudarEstilo(event){
 
     if (event.keyCode == 13 || event.which == 13 || event.type == "click"){
       // alterar o contraste
-      if(atual === '' && isPb == 'false' && event != undefined)
+      if(atual === 'empty.css' && isPb == 'false' && event != undefined)
         {
           document.getElementById("link-pretoebranco").setAttribute("href", document.getElementById("link-pretoebranco").getAttribute("data-href"));
           document.cookie = "contrastChanged=true";
         }
         // retomar contraste original
-        if(atual !== '' && isPb == 'true' && event != undefined){
-        document.getElementById("link-pretoebranco").setAttribute("href", "");
+        if(atual !== 'empty.css' && isPb == 'true' && event != undefined){
+        document.getElementById("link-pretoebranco").setAttribute("href", "empty.css");
         document.cookie = "contrastChanged=false";
       }
     }
